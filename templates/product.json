@@ -1,0 +1,581 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "a087744a-91a4-43d9-9e00-05b9205dbab2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Description",
+            "icon": "none",
+            "content": "<p>Fed up with false eyelashes, extensions, and serums that just don’t quite do the trick? Forget the fuss and grow your own naturally lush lashes. This deep-conditioning lash serum uses a unique blend of peptides, vegan stem cells, vitamins, and amino acids to fortify and amplify the appearance of lash length and fullness...and it can even be used on your eyebrows! When applied nightly, this proprietary formula moisturizes dry, damaged lash & brow hairs while maximizing the appearance of lash volume with each growth cycle. Expect fabulous, flutter-worthy lashes in just 60 days. This product may be used on both eyelashes and eyebrows. However, the 3 month and 6 month supply estimate is based on using Lash Therapy only on your eyelashes. Using on your eyebrows as well will mean the product will not last as long.<\/p>",
+            "page": ""
+          }
+        },
+        "e0e3f0eb-2dab-4d64-9d86-ab8d863f882e": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ingredients",
+            "icon": "none",
+            "content": "<p>Water, Aloe Barbadensis (Aloe Vera) Leaf Juice, Myristoyl Pentapeptide-17, Myristoyl Hexapeptide-16, Glycerin, Biotin, Camellia Synesis (Green Tea) Leaf Extract, Malus Domestica Fruit Cell Culture Extract (Swiss Apple Stem Cell), Sodium Hyaluronate (Hyaluronic Acid), Sodium PCA, Phenoxyethanol, Sodium Lactate, Allantoin, D-Panthenol (Provitamin B5), Hydroxyethylcellulose, Polysorbate 20, Cloprostenol Isopropyl Ester, Trifolium Pratense (Red Clover) Extract<\/p>",
+            "page": ""
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "cd5a0509-f27a-475d-8da3-7969b32a404e": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "{% unless product.available == true %}\n\n<a class=\"klaviyo-bis-trigger\" href=\"#\">Notify Me When Available<\/a>\n\n{%endunless%}"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "variant_picker",
+        "buy_buttons",
+        "a087744a-91a4-43d9-9e00-05b9205dbab2",
+        "e0e3f0eb-2dab-4d64-9d86-ab8d863f882e",
+        "description",
+        "share",
+        "quantity_selector",
+        "cd5a0509-f27a-475d-8da3-7969b32a404e"
+      ],
+      "settings": {
+        "shipping_heading": "Free Shipping Orders $100+",
+        "guarantee": "60 DAY MONEY BACK GUARANTEE",
+        "guarantee_bg": "#f3f3f3",
+        "enable_sticky_info": true,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "99e0ce2d-436a-4fd9-a4f1-e1d044c90742": {
+      "type": "ingredients",
+      "blocks": {
+        "a2475914-5250-4195-962d-8f375c7fde79": {
+          "type": "text_block",
+          "settings": {
+            "featured_product": "super-duo",
+            "heading": "Ingredients",
+            "short_desc": "Our Heroes",
+            "image_1": "shopify:\/\/shop_images\/cj_hyaluronicacid.png",
+            "name_1": "Hyaluronic Acid",
+            "desc_1": "<p><strong>Hyaluronic Acid<\/strong><\/p><p>Your own personal moisturizing superhero. Hyaluronic Acid can hold up to 1,000 times its own weight in water, leaving the skin feeling smooth and hydrated, eliminating micro lines and driving additional moisture into your growing lashes.<\/p>",
+            "image_2": "shopify:\/\/shop_images\/lt_aloevera.png",
+            "name_2": "Aloe Vera",
+            "desc_2": "<p><strong>Aloe Barbadensis Leaf Juice<\/strong><\/p><p>Aloe’s anti-inflammatory properties help soothe and calm the skin. Added bonus: aloe is also a potent moisturizer and helps protect against aging. <\/p>",
+            "image_3": "shopify:\/\/shop_images\/lt_swissapple.png",
+            "name_3": "Swiss Apple Stem Cells",
+            "desc_3": "<p><strong>Swiss Apple Stem Cells<\/strong><\/p><p>Swiss Apple Stem Cells encourage new skin cell generation and longer cell life ensuring the healthiest lash growth conditions. Grow, baby, grow!<\/p>",
+            "image_4": "shopify:\/\/shop_images\/lt_greentea.png",
+            "name_4": "Green Tea Leaf Extract",
+            "desc_4": "<p><strong>Green Tea Leaf Extract<\/strong><\/p><p>Aside from being rich in antioxidants, Green Tea Leaf Extract can also assist with anti-aging and soothing skin to help keep your lids smooth and lush.<\/p>",
+            "image_5": "shopify:\/\/shop_images\/lt_mp17.png",
+            "name_5": "MP-17 & MH-16",
+            "desc_5": "<p><strong>Myristoyl Pentapeptide-17 & Myristoyl Hexapeptide-16<\/strong><br\/>THE eyelash peptides. MP-17 and MH-16 are powerhouse peptides specifically developed to work together for the purpose of promoting eyelash health and growth.<\/p>",
+            "name_6": "",
+            "desc_6": "",
+            "details_heading": "",
+            "long_desc": ""
+          }
+        },
+        "73be3b59-f601-4997-b717-5a5c1bb684ef": {
+          "type": "text_block",
+          "settings": {
+            "featured_product": "lash-conditioner",
+            "heading": "Ingredients",
+            "short_desc": "Our Heroes",
+            "image_1": "shopify:\/\/shop_images\/cj_hyaluronicacid.png",
+            "name_1": "Hyaluronic Acid",
+            "desc_1": "<p><strong>Hyaluronic Acid<\/strong><\/p><p>Your own personal moisturizing superhero. Hyaluronic Acid can hold up to 1,000 times its own weight in water, leaving the skin feeling smooth and hydrated, eliminating micro lines and driving additional moisture into your growing lashes.<\/p>",
+            "image_2": "shopify:\/\/shop_images\/lt_aloevera.png",
+            "name_2": "Aloe Vera",
+            "desc_2": "<p><strong>Aloe Barbadensis Leaf Juice<\/strong><\/p><p>Aloe’s anti-inflammatory properties help soothe and calm the skin. Added bonus: aloe is also a potent moisturizer and helps protect against aging. <\/p>",
+            "image_3": "shopify:\/\/shop_images\/lt_swissapple.png",
+            "name_3": "Swiss Apple Stem Cells",
+            "desc_3": "<p><strong>Swiss Apple Stem Cells<\/strong><\/p><p>Swiss Apple Stem Cells encourage new skin cell generation and longer cell life ensuring the healthiest lash growth conditions. Grow, baby, grow!<\/p>",
+            "image_4": "shopify:\/\/shop_images\/lt_greentea.png",
+            "name_4": "Green Tea Leaf Extract",
+            "desc_4": "<p><strong>Green Tea Leaf Extract<\/strong><br\/>Aside from being rich in antioxidants, Green Tea Leaf Extract can also assist with anti-aging and soothing skin to help keep your lids smooth and lush.<\/p>",
+            "image_5": "shopify:\/\/shop_images\/lt_mp17.png",
+            "name_5": "MP-17 & MH-16",
+            "desc_5": "<p><strong>Myristoyl Pentapeptide-17 & Myristoyl Hexapeptide-16<\/strong><\/p><p>THE eyelash peptides. MP-17 and MH-16 are powerhouse peptides specifically developed to work together for the purpose of promoting eyelash health and growth.<\/p>",
+            "name_6": "",
+            "desc_6": "",
+            "details_heading": "",
+            "long_desc": ""
+          }
+        },
+        "ffaa04b6-68c5-4bf3-a001-019cca33dc49": {
+          "type": "text_block",
+          "settings": {
+            "featured_product": "c-juvenate",
+            "heading": "Ingredients",
+            "short_desc": "Our Heroes",
+            "image_1": "shopify:\/\/shop_images\/cj_vitaminc.png",
+            "name_1": "Vitamin C",
+            "desc_1": "<p><strong>Vitamin C<\/strong><\/p><p>This antioxidant powerhouse reduces dark spots and brightens and evens skin tone for a beautifully radiant glow.<\/p>",
+            "image_2": "shopify:\/\/shop_images\/cj_ferulicacid.png",
+            "name_2": "Ferulic Acid",
+            "desc_2": "<p><strong>Ferulic Acid<\/strong><\/p><p>Ferulic Acid is a plant-derived antioxidant that packs a powerful punch when it comes to fighting off environmental stressors and free radicals. Plus, it amps up the efficacy and stability of Vitamin C.<\/p>",
+            "image_3": "shopify:\/\/shop_images\/cj_hyaluronicacid.png",
+            "name_3": "Hyaluronic Acid",
+            "desc_3": "<p><strong>Hyaluronic Acid<\/strong><\/p><p>Introducing your own personal moisturizing superhero! Hyaluronic Acid can hold up to 1,000 times its own weight in water, leaving the skin feeling plump, smooth, and SUPER hydrated.<\/p>",
+            "image_4": "shopify:\/\/shop_images\/cj_niacinamide.png",
+            "name_4": "Niacinamide",
+            "desc_4": "<p><strong>Niacinamide<\/strong><\/p><p>Also known as Vitamin B3 and Nicotinic Acid, this wildly powerful skin-restoring ingredient offers oodles of benefits for aging and blemish-prone skin. It’s our hands-down hero for everything from improving the appearance of enlarged pores and visibly reducing microlines and wrinkles to evening skin tone and fighting off environmental stressors.<\/p>",
+            "image_5": "shopify:\/\/shop_images\/cj_redalgae.png",
+            "name_5": "Red Algae Extract",
+            "desc_5": "<p><strong>Red Algae Extract<\/strong><\/p><p>Providing the perfect blend of power and pampering, this potent antioxidant fights off environmental stressors while providing wonderful skin soothing and moisturizing benefits.<\/p>",
+            "image_6": "shopify:\/\/shop_images\/cj_purslane.png",
+            "name_6": "Purslane",
+            "desc_6": "<p><strong>Purslane<\/strong><\/p><p>Bursting with benefits, this natural wonder is packed with Vitamins A, C, and E as well as skin-nourishing minerals and even Omega-3 Fatty Acids. It’s a proven powerhouse for improving skin elasticity, strength, brightness and tone!<\/p>",
+            "details_heading": "",
+            "long_desc": ""
+          }
+        },
+        "1668e653-2023-4b18-8f7e-4fd5caf0ce61": {
+          "type": "text_block",
+          "settings": {
+            "featured_product": "time-machine",
+            "heading": "Ingredients",
+            "short_desc": "Our Heroes",
+            "image_1": "shopify:\/\/shop_images\/tm_bakuchiol.png",
+            "name_1": "Bakuchiol",
+            "desc_1": "<p><strong>Bakuchiol<\/strong><\/p><p>Pronounced bah-coo-chee-all, this plant-derived natural alternative to Retinol is clinically shown to offer similar anti-aging benefits—like reduced wrinkles, better skin elasticity and smoothness—without irritation. In other words, all gain with no pain.<\/p>",
+            "image_2": "shopify:\/\/shop_images\/lt_swissapple.png",
+            "name_2": "Swiss Apple Stem Cell",
+            "desc_2": "<p><strong>Swiss Apple Stem Cell<\/strong><\/p><p>This sweet-sounding natural wonder encourages new skin cell generation while supporting longer cell life to help your skin stay resilient and fresh with healthy cellular turnover.<\/p>",
+            "image_3": "shopify:\/\/shop_images\/tm_ashwagandha.png",
+            "name_3": "Ashwagandha",
+            "desc_3": "<p><strong>Ashwagandha<\/strong><\/p><p>This ancient herb packs a powerful one-two punch with its antibacterial and antimicrobial properties, protecting the skin from infections and acne. It also boosts the collagen in the skin to restore skin’s youthful elasticity.<\/p>",
+            "image_4": "shopify:\/\/shop_images\/tm_cucumber.png",
+            "name_4": "Cucumber Extract",
+            "desc_4": "<p><strong>Cucumber Extract<\/strong><\/p><p>Extracted from the same fruit we turn to for pampering tired eyes, this powerful antioxidant helps soothe skin, calm irritation, and reduce puffiness.<\/p>",
+            "image_5": "shopify:\/\/shop_images\/tm_kakaduplum.png",
+            "name_5": "Kakadu Plum",
+            "desc_5": "<p><strong>Kakadu Plum<\/strong><\/p><p>It sounds magical because it is magical! Brimming with Vitamin C and other antioxidants, Kakadu Plum brightens skin tone, fights free radicals and improves collagen production.<\/p>",
+            "image_6": "shopify:\/\/shop_images\/cj_hyaluronicacid.png",
+            "name_6": "Hyaluronic Acid",
+            "desc_6": "<p><strong>Hyaluronic Acid<\/strong><\/p><p>Introducing your own personal moisturizing superhero! Hyaluronic Acid can hold up to 1,000 times its own weight in water, leaving the skin feeling, plump, smooth, and SUPER hydrated.<\/p>",
+            "details_heading": "",
+            "long_desc": ""
+          }
+        },
+        "6fd64965-d1a1-4f0f-b9a9-8dbeaf42ee19": {
+          "type": "text_block",
+          "settings": {
+            "featured_product": "",
+            "heading": "",
+            "short_desc": "",
+            "name_1": "",
+            "desc_1": "",
+            "name_2": "",
+            "desc_2": "",
+            "name_3": "",
+            "desc_3": "",
+            "name_4": "",
+            "desc_4": "",
+            "name_5": "",
+            "desc_5": "",
+            "name_6": "",
+            "desc_6": "",
+            "details_heading": "",
+            "long_desc": ""
+          }
+        }
+      },
+      "block_order": [
+        "a2475914-5250-4195-962d-8f375c7fde79",
+        "73be3b59-f601-4997-b717-5a5c1bb684ef",
+        "ffaa04b6-68c5-4bf3-a001-019cca33dc49",
+        "1668e653-2023-4b18-8f7e-4fd5caf0ce61",
+        "6fd64965-d1a1-4f0f-b9a9-8dbeaf42ee19"
+      ],
+      "settings": {
+      }
+    },
+    "ad725ba0-bf2b-46e6-be14-e47eaf0bd71f": {
+      "type": "Logo-bar",
+      "blocks": {
+        "template--16989491495161__ad725ba0-bf2b-46e6-be14-e47eaf0bd71f-logo_image-1": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hello_Skincare_icon-01.png",
+            "link": ""
+          }
+        },
+        "template--16989491495161__ad725ba0-bf2b-46e6-be14-e47eaf0bd71f-logo_image-2": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hello_Skincare_icon-02.png",
+            "link": ""
+          }
+        },
+        "template--16989491495161__ad725ba0-bf2b-46e6-be14-e47eaf0bd71f-logo_image-3": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hello_Skincare_icon-03.png",
+            "link": ""
+          }
+        },
+        "template--16989491495161__ad725ba0-bf2b-46e6-be14-e47eaf0bd71f-logo_image-4": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hello_Skincare_icon-04.png",
+            "link": ""
+          }
+        },
+        "0cf4e58a-2d48-4b33-966f-40ae88e499bc": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hello_Skincare_icon-05.png",
+            "link": ""
+          }
+        },
+        "b7ffd907-71cd-409c-a7aa-3bc6e40f7532": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hello_Skincare_icon-06.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16989491495161__ad725ba0-bf2b-46e6-be14-e47eaf0bd71f-logo_image-1",
+        "template--16989491495161__ad725ba0-bf2b-46e6-be14-e47eaf0bd71f-logo_image-2",
+        "template--16989491495161__ad725ba0-bf2b-46e6-be14-e47eaf0bd71f-logo_image-3",
+        "template--16989491495161__ad725ba0-bf2b-46e6-be14-e47eaf0bd71f-logo_image-4",
+        "0cf4e58a-2d48-4b33-966f-40ae88e499bc",
+        "b7ffd907-71cd-409c-a7aa-3bc6e40f7532"
+      ],
+      "settings": {
+        "title": "Our Promise"
+      }
+    },
+    "46c640e5-a31a-451f-bc20-cd3fe249d248": {
+      "type": "product-lash-detail-section",
+      "blocks": {
+        "c9f2e2c6-d3a1-4edd-8dc9-624f53eb4a73": {
+          "type": "text_block",
+          "settings": {
+            "featured_product": "lash-conditioner",
+            "heading": "Lashes 101",
+            "sub_heading": "About Your Lashes",
+            "desc": "Aside from being your favorite fluttery accessories, each eyelash is actually a sensory hair that reflexively shuts the eyelid whenever it is touched by dirt, dust, or anything else that could get in the eye. The upper lid typically has about 100 to 150 lashes, while the bottom has between 70 and 100 lashes. Most eyelashes grow to be about 10mm long (just over 3\/8 inch).",
+            "middle_heading": "The eyelash growth cycle has three phases.",
+            "middle_image": "shopify:\/\/shop_images\/img.png",
+            "tab_btn1": "Anagen (Growth) Phase",
+            "tab_heading1": "Anagen (Growth) Phase",
+            "tab_desc1": "This is the phase when lashes are actively growing, and it lasts between 30 and 45 days. Only about 40 percent of the upper lashes and 15 percent of the lower lashes are in the anagen phase at any one time. Each lash will grow to a specific length and then stop.",
+            "tab_btn2": "Catagen (Transition) Phase",
+            "tab_heading2": "Catagen (Transition) Phase",
+            "tab_desc2": "During this phase, the lash stops growing, and the hair follicle shrinks. If an eyelash falls out or is plucked out during this phase, it won’t grow back right away because the follicle needs to complete the catagen phase before it can move on to the next one. This phase lasts between 15 and 20 days.",
+            "tab_btn3": "Telogen (Resting) Phase",
+            "tab_heading3": "Telogen (Resting) Phase",
+            "tab_desc3": "This phase can last more than 100 days before the eyelash falls out and a new one begins to grow. Because each individual lash is in its own phase of the growth cycle, it’s normal for a few lashes to fall out most days. It typically takes between four and eight weeks to fully replace an eyelash."
+          }
+        }
+      },
+      "block_order": [
+        "c9f2e2c6-d3a1-4edd-8dc9-624f53eb4a73"
+      ],
+      "settings": {
+        "bd_color": "#fef6ee"
+      }
+    },
+    "5d8ef11c-f337-4d4a-a52a-6d16d30aa43e": {
+      "type": "product-se4-video",
+      "blocks": {
+        "e7dce9d8-fac9-4e71-884d-f4801e84cadc": {
+          "type": "text_block",
+          "settings": {
+            "featured_product": "lash-conditioner",
+            "sub_heading": "HOW TO APPLY",
+            "heading": "Easy to Apply",
+            "desc": "<ul>\n<li>\n<span class=\"number\">1<\/span>Cleanse and dry your face before applying.<\/li>\n\n<li>\n<span class=\"number\">2<\/span>Apply along the skin of the upper lash line.<\/li>\n\n<li>\n<span class=\"number\">3<\/span>Allow 90 seconds for product to dry.<\/li>\n<\/ul>",
+            "videoURL": "https:\/\/cdn.shopify.com\/s\/files\/1\/0242\/8564\/2804\/files\/ApplicationVideo.mp4?v=1624952018"
+          }
+        },
+        "75654ce8-4c16-4cd1-80f0-ce367d1389d2": {
+          "type": "text_block",
+          "settings": {
+            "featured_product": "c-juvenate",
+            "sub_heading": "HOW TO APPLY",
+            "heading": "Easy to Apply",
+            "desc": "<ul>\n<li>\n<span class=\"number\">1<\/span>In the morning after cleansing, apply 3-5 drops of serum to your barely dry or lightly damp face and neck and gently massage or pat serum into the skin.\n<\/li>\n<li>\n<span class=\"number\">2<\/span>Allow Serum 60-90 seconds to absorb before adding additional products.\n<\/li>\n<li>\n<span class=\"number\">3<\/span>Follow serum with your favorite moisturizer and SPF.\n<\/li>\n<\/ul>",
+            "videoURL": "",
+            "image": "shopify:\/\/shop_images\/tm.jpg"
+          }
+        },
+        "8442807b-6e04-4f6f-ba1b-193c45ae33ca": {
+          "type": "text_block",
+          "settings": {
+            "featured_product": "time-machine",
+            "sub_heading": "HOW TO APPLY",
+            "heading": "Easy to Apply",
+            "desc": "<ul>\n<li>\n<span class=\"number\">1<\/span>In the evening after cleansing, apply 3-5 drops of serum to your barely dry or lightly damp face and neck and gently massage or pat serum into the skin.\n<\/li>\n<li>\n<span class=\"number\">2<\/span>Allow Serum 60-90 seconds to absorb before adding additional products.\n<\/li>\n<li>\n<span class=\"number\">3<\/span>Follow serum with your favorite moisturizer or night cream.<\/li>\n<\/ul>",
+            "videoURL": "",
+            "image": "shopify:\/\/shop_images\/cj.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "e7dce9d8-fac9-4e71-884d-f4801e84cadc",
+        "75654ce8-4c16-4cd1-80f0-ce367d1389d2",
+        "8442807b-6e04-4f6f-ba1b-193c45ae33ca"
+      ],
+      "settings": {
+      }
+    },
+    "92599d0d-4a69-406e-90e2-70a92b4b5358": {
+      "type": "product-reviews-widget",
+      "settings": {
+      }
+    },
+    "2ecc247c-79e8-4dae-b9ec-fa7c403270a0": {
+      "type": "faq-section",
+      "blocks": {
+        "dfc754f0-979d-4969-9fdf-8d57f57e8170": {
+          "type": "text_block",
+          "settings": {
+            "featured_product": "lash-conditioner",
+            "sub_heading": "Know your products",
+            "heading": "Frequently Asked Questions",
+            "heading-1": "How long will it take before I notice results?",
+            "desc-1": "<p>Lash Therapy starts working form the very first application, typically you can see the effects after 3-4 weeks with full results around 90 days.<\/p>",
+            "heading-2": "How does Lash Therapy work?",
+            "desc-2": "<p>Lash Therapy’s proprietary formula is specifically developed to provide your lashes with maximum nourishment and moisture. It also delivers all the necessary vitamins, peptides, and amino acids to your growing lashes so they can be the longest, fullest, most resilient version of themselves.<\/p>",
+            "heading-3": "Is Hello cruelty free?",
+            "desc-3": "<p>Absolutely, Hello never tests on animals and we meticulously source our ingredients from premium suppliers that uphold the same standard.<\/p>",
+            "heading-4": "Do you offer a money back guarantee?",
+            "desc-4": "<p>Of course, Hello offers a 60-day money back guarantee on all new product purchases. If for any reason you’re not satisfied with your purchase, send us back the unused portion and we will refund your total purchase price minus initial shipping and handling charges.<\/p>",
+            "heading-5": "Is Lash Therapy vegan friendly?",
+            "desc-5": "<p>It sure is.<\/p>",
+            "heading-6": "Is shipping included?",
+            "desc-6": "<p>Definitely. Free domestic standard shipping is always included. We don’t like to pay extra for shipping and we don’t think you should have to either.<\/p>",
+            "heading-7": "Is Lash Therapy paraben free?",
+            "desc-7": "<p>It sure is.<\/p>",
+            "heading-8": "When will my order ship?",
+            "desc-8": "<p>Orders are shipped within 1-2 business days. After your order has been processed you will receive an email confirmation with tracking details.<\/p>",
+            "heading-9": "What happens if I stop using Lash Therapy?",
+            "desc-9": "<p>Lash Therapy is a beauty treatment and discontinuing use will return your lashes to their original appearance.<\/p>",
+            "heading-10": "Will Lash Therapy irritate my eyes?",
+            "desc-10": "<p>Lash Therapy is formulated with the highest quality ingredients by industry leading experts to create perfect balance while achieving maximum efficacy. When used correctly, Lash Therapy shouldn’t cause any irritation. Some users with sensitive skin may experience slight irritation if they apply too much product, do not follow directions, or use product too frequently. If irritation occurs discontinue use.<\/p>",
+            "heading-11": "How long will a tube of Lash Therapy Last?",
+            "desc-11": "<p>Lash Therapy is available in two sizes and when used correctly (one application daily): 2ml = 3 Month Supply 4ml = 6 Month Supply<\/p>",
+            "heading-12": "",
+            "desc-12": ""
+          }
+        },
+        "a2047bd2-776a-4762-9caa-397f495246e3": {
+          "type": "text_block",
+          "settings": {
+            "featured_product": "c-juvenate",
+            "sub_heading": "Know your products",
+            "heading": "Frequently Asked Questions",
+            "heading-1": "How long will it take before I notice results?",
+            "desc-1": "<p>Um, how does instantly sound? That’s right, C-Juvenate starts working from the very first application, which means you’ll be able to notice its effects immediately. After that, it just keeps getting better with every use! And, somewhere between 8-12 weeks, you’ll see full results. Of course, continued use will continue to produce results. But, you’ll notice the most dramatic results within those first 8-12 weeks.<\/p>",
+            "heading-2": "How does C-Juvenate work?",
+            "desc-2": "<p>C-Juvenate Super Serum gives your skin a super dose of Vitamin C to eliminate dark spots and uneven skin tone while boosting your skin's radiance. You end up with a visibly healthy glow that<br\/>looks and feels downright amazing. But that’s just the start. C-Juvenate also plumps, hydrates and nourishes your skin with Ferulic Acid and a unique combination of power-packed ingredients that are designed to let your skin’s natural beauty shine.<\/p>",
+            "heading-3": "How long will a bottle of C-Juvenate last?",
+            "desc-3": "<p>When using once daily, with 3-5 drops per day, one bottle should last approximately 2-3 months.<\/p>",
+            "heading-4": "Do I need to use C-Juvenate and Time Machine together?",
+            "desc-4": "<p>Nope. Although the two serums were designed and formulated to be a Super Duo, you’ll still see amazing results when using either product on its own.<\/p>",
+            "heading-5": "Is Hello Cruelty-Free?",
+            "desc-5": "<p>Always! Hello never tests on animals, and we only source our ingredients from a select group of premium suppliers that uphold the same standard.<\/p>",
+            "heading-6": "Do you offer a money back guarantee?",
+            "desc-6": "<p>Yes! We don’t just believe in our products, we stand behind them with a 60-day money-back guarantee on any first-time purchase. If for any reason you’re not satisfied with your Hello product purchase, simply return the unused portion to us, and we’ll refund your total purchase price minus initial shipping and handling charges.<\/p>",
+            "heading-7": "Is C-Juvenate Super Serum Vegan-Friendly?",
+            "desc-7": "<p>The term “clean beauty” gets thrown around a lot these days, but its meaning isn’t always clear or consistent from brand to brand. So rather than just jumping on the bandwagon, we think it’s more important to let you know exactly what we mean by “clean” here at Hello. Hello is absolutely meticulous about every aspect of our product formulations, and we make a conscious decision to eliminate ingredients that are proven harmful. All of our products are Vegan-friendly and cruelty-free as well as 100% free of all parabens, sulfates, phosphates, silicons, and synthetic dyes and fragrances. Hello is clean you can count on.<\/p>",
+            "heading-8": "Is shipping included?",
+            "desc-8": "<p>The answer is mostly yes! Hello offers free shipping on all U.S. and Canadian orders. However, we’re not able to provide free shipping to other countries at this time. For these international orders, shipping is calculated during checkout.<\/p>",
+            "heading-9": "",
+            "desc-9": "",
+            "heading-10": "",
+            "desc-10": "",
+            "heading-11": "",
+            "desc-11": "",
+            "heading-12": "",
+            "desc-12": ""
+          }
+        },
+        "f1cc799a-5cbb-4195-ab87-14cce3ddf2e0": {
+          "type": "text_block",
+          "settings": {
+            "featured_product": "time-machine",
+            "sub_heading": "KNOW YOUR PRODUCTS",
+            "heading": "Frequently Asked Questions",
+            "heading-1": "How long will it take before I notice results?",
+            "desc-1": "<p>Who has time to wait on beauty product results, right? With Time Machine, you don’t have to. It starts working from the very first application, so you’ll be able to notice its effects immediately. After that, it just keeps getting better with every use! And, somewhere between 8-12 weeks, you’ll see full results. Of course, continued use will continue to produce results. But, you’ll notice the most dramatic results within those first 8-12 weeks.<\/p>",
+            "heading-2": "How does Time Machine work?",
+            "desc-2": "<p>Time Machine is an age-defying super serum that ultra-hydrates your skin while helping build back its natural radiance and elasticity. This powerful formulation of strong actives is clinically proven to restore your skin's youthful tone while eliminating micro lines and rejuvenating skin’s overall health. In no time at all, your skin will positively glow with gratitude.<\/p>",
+            "heading-3": "How long will a bottle of Time Machine last?",
+            "desc-3": "<p>When using once daily, with 3-5 drops per day, one bottle should last approximately 2-3 months.<\/p>",
+            "heading-4": "Do I need to use Time Machine and C-Juvenate together?",
+            "desc-4": "<p>Nope. Although the two serums were designed and formulated to be a Super Duo, you’ll still see amazing results when using either product on its own.<\/p>",
+            "heading-5": "Is Hello Cruelty-Free?",
+            "desc-5": "<p>Always! Hello never tests on animals, and we only source our ingredients from a select group of premium suppliers that uphold the same standard.<\/p>",
+            "heading-6": "Do you offer a money back guarantee?",
+            "desc-6": "<p>Yes! We don’t just believe in our products, we stand behind them with a 60-day money-back guarantee on any first-time purchase. If for any reason you’re not satisfied with your Hello product purchase, simply return the unused portion to us, and we’ll refund your total purchase price minus initial shipping and handling charges.<\/p>",
+            "heading-7": "Is Time Machine Super Serum Vegan-Friendly?",
+            "desc-7": "<p>Absolutely! Hello Skincare’s entire product line is Vegan-friendly<\/p>",
+            "heading-8": "Is Hello Skincare a clean beauty brand?",
+            "desc-8": "<p>The term “clean beauty” gets thrown around a lot these days, but its meaning isn’t always clear or consistent from brand to brand. So rather than just jumping on the bandwagon, we think it’s more important to let you know exactly what we mean by “clean” here at Hello. Hello is absolutely meticulous about every aspect of our product formulations, and we make a conscious decision to eliminate ingredients that are proven harmful. All of our products are Vegan-friendly and cruelty-free as well as 100% free of all parabens, sulfates, phosphates, silicons, and synthetic dyes and fragrances. Hello is clean you can count on.<\/p>",
+            "heading-9": "Is shipping included?",
+            "desc-9": "<p>The answer is mostly yes! Hello offers free shipping on all U.S. and Canadian orders. However, we’re not able to provide free shipping to other countries at this time. For these international orders, shipping is calculated during checkout.<\/p>",
+            "heading-10": "",
+            "desc-10": "",
+            "heading-11": "",
+            "desc-11": "",
+            "heading-12": "",
+            "desc-12": ""
+          }
+        }
+      },
+      "block_order": [
+        "dfc754f0-979d-4969-9fdf-8d57f57e8170",
+        "a2047bd2-776a-4762-9caa-397f495246e3",
+        "f1cc799a-5cbb-4195-ab87-14cce3ddf2e0"
+      ],
+      "settings": {
+      }
+    },
+    "154e79be-f6ca-4513-a295-090684807bf1": {
+      "type": "rich-text",
+      "blocks": {
+        "1dd2b207-feca-4e94-b717-e94e298fc176": {
+          "type": "caption",
+          "settings": {
+            "caption": "OUR GUARANTEE_",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "template--16989491495161__154e79be-f6ca-4513-a295-090684807bf1-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Love It or Your Money Back",
+            "heading_size": "h1"
+          }
+        },
+        "template--16989491495161__154e79be-f6ca-4513-a295-090684807bf1-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Hello Skincare’s top priority is to bring you premium quality, highly effective skincare essentials that you love and trust. When it comes to choosing and sourcing ingredients, we refuse to take shortcuts or make compromises. We stand behind every one of our formulations with a 60-day money back guarantee. If you don’t love it, we’ll buy it back at full price.<\/p><p>Hello Skincare develops, manufactures, and tests all products in the United States.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1dd2b207-feca-4e94-b717-e94e298fc176",
+        "template--16989491495161__154e79be-f6ca-4513-a295-090684807bf1-heading-1",
+        "template--16989491495161__154e79be-f6ca-4513-a295-090684807bf1-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "icon": "shopify:\/\/shop_images\/Group_2_6ba67f27-1476-4e17-aa6b-dd3e193191c7.png",
+        "content_alignment": "left",
+        "color_scheme": "scheme-f49e64fc-b6f6-4809-992d-7641ec9930ec",
+        "full_width": false,
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
+    },
+    "0839b5b9-ecba-4662-a1c9-97b4749ecc71": {
+      "type": "addtocart-sticky",
+      "settings": {
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "More From Us",
+        "heading_size": "h1",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "99e0ce2d-436a-4fd9-a4f1-e1d044c90742",
+    "ad725ba0-bf2b-46e6-be14-e47eaf0bd71f",
+    "46c640e5-a31a-451f-bc20-cd3fe249d248",
+    "5d8ef11c-f337-4d4a-a52a-6d16d30aa43e",
+    "92599d0d-4a69-406e-90e2-70a92b4b5358",
+    "2ecc247c-79e8-4dae-b9ec-fa7c403270a0",
+    "154e79be-f6ca-4513-a295-090684807bf1",
+    "0839b5b9-ecba-4662-a1c9-97b4749ecc71",
+    "related-products"
+  ]
+}

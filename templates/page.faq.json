@@ -1,0 +1,83 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "b4806fe2-8806-4d24-83ee-8603f50f6283": {
+      "type": "Faq-section-dynamic",
+      "blocks": {
+        "template--16992591380729__b4806fe2-8806-4d24-83ee-8603f50f6283-faq-1": {
+          "type": "faq",
+          "settings": {
+            "heading-1": "Is Hello Skincare a “clean beauty” brand?",
+            "desc-1": "<p>The term “clean beauty” gets thrown around a lot these days, but its meaning isn’t always clear or consistent from brand to brand. So rather than just jumping on the bandwagon, we think it’s more important to let you know exactly what we mean by “clean” here at Hello. Hello is absolutely meticulous about every aspect of our product formulations, and we make a conscious decision to eliminate ingredients that are proven harmful. All of our products are Vegan-friendly and cruelty-free as well as 100% free of all parabens, sulfates, phosphates, silicons, and synthetic dyes and fragrances. Hello is clean you can count on.<\/p>"
+          }
+        },
+        "ba606234-7764-4957-b80c-15723fa4c7f4": {
+          "type": "faq",
+          "settings": {
+            "heading-1": "Do you offer a money back guarantee?",
+            "desc-1": "<p>Yes! We don’t just believe in our products, we stand behind them with a 60-day money-back guarantee on any first-time purchase. If for any reason you’re not satisfied with your Hello product purchase, simply return the unused portion to us, and we’ll refund your total purchase price minus initial shipping and handling charges.<\/p>"
+          }
+        },
+        "936e589d-8cca-436e-a4cf-82d94bec435d": {
+          "type": "faq",
+          "settings": {
+            "heading-1": "Is Hello Cruelty-Free?",
+            "desc-1": "<p>Always! Hello never tests on animals, and we only source our ingredients from a select group of premium suppliers that uphold the same standard.<\/p>"
+          }
+        },
+        "5f05fa64-60dc-48a4-a3d5-523d38799d1a": {
+          "type": "faq",
+          "settings": {
+            "heading-1": "Is Hello Skincare Vegan-Friendly?",
+            "desc-1": "<p>Absolutely! Hello Skincare’s entire product line is Vegan-friendly.<\/p>"
+          }
+        },
+        "4fca4524-3c47-4faa-b1cc-008899358af7": {
+          "type": "faq",
+          "settings": {
+            "heading-1": "Is shipping included?",
+            "desc-1": "<p>The answer is mostly yes! Hello offers free shipping on all U.S. and Canadian orders. However, we’re not able to provide free shipping to other countries at this time. For these international orders, shipping is calculated during checkout.<\/p>"
+          }
+        },
+        "fc6f546c-d216-4d6c-9ad9-04abc8ef10a4": {
+          "type": "faq",
+          "settings": {
+            "heading-1": "When will my order ship?",
+            "desc-1": "<p>We do our best to get our products into your hands as quickly as possible. Every order is shipped within 1-2 business days. Once your order is processed, you’ll get an email confirmation with tracking details that keep you posted on your order’s estimated arrival.<\/p>"
+          }
+        },
+        "f2bf4e24-cd74-4bab-84bd-a22d91cffdf3": {
+          "type": "faq",
+          "settings": {
+            "heading-1": "How is Hello different from other beauty products?",
+            "desc-1": "<p>At Hello, we believe that when science and nature work together, great things happen. We put that into practice to create amazing products that feel good and are better for you, so you look and feel your best. It’s why we choose only high-quality, biocompatible ingredients that have proven efficacy. We harness their regenerative and therapeutic properties to create perfectly balanced formulations that nourish the natural beauty and health of your skin. Hello is simply beauty, done better.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16992591380729__b4806fe2-8806-4d24-83ee-8603f50f6283-faq-1",
+        "ba606234-7764-4957-b80c-15723fa4c7f4",
+        "936e589d-8cca-436e-a4cf-82d94bec435d",
+        "5f05fa64-60dc-48a4-a3d5-523d38799d1a",
+        "4fca4524-3c47-4faa-b1cc-008899358af7",
+        "fc6f546c-d216-4d6c-9ad9-04abc8ef10a4",
+        "f2bf4e24-cd74-4bab-84bd-a22d91cffdf3"
+      ],
+      "settings": {
+        "sub_heading": "BRAND FAQ",
+        "heading": "General Questions & Answers"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "b4806fe2-8806-4d24-83ee-8603f50f6283"
+  ]
+}

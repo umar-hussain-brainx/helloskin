@@ -1,0 +1,42 @@
+<style>
+  .jdgm-rev__icon::after, .jdgm-rev__buyer-badge{
+    background:#000 !important;
+  }
+  .jdgm-star.jdgm--on:before {
+    content: "\e000";
+}
+
+.jdgm-star.jdgm--on:before {
+    content: "\e000";
+    color: #d61280;
+}
+ .jdgm-histogram .jdgm-histogram__bar-content{
+   background: #d61280;
+ } 
+  .jdgm-write-rev-link{
+    text-decoration: none;
+  }
+</style>
+  
+  <div id="judgeme_review_widget" style="min-height: 1000px;" class="page-width">
+    {% render 'judgeme_widgets', widget_type: 'judgeme_review_widget', concierge_install: false, product: product %}
+  </div>
+  {% schema %}
+{
+  "name": "Product Reviews",
+  "class": "index-section Reviews",
+  "settings": [
+
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "Product Reviews"
+      },
+      "category": {
+        "en": "Text"
+      }
+    }
+  ]
+}
+{% endschema %}

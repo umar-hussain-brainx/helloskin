@@ -1,0 +1,520 @@
+{% assign product_handle = product.handle %}
+{% for block in section.blocks %}
+{% if product_handle == block.settings.featured_product %}
+
+<div class="main page-width">
+<div class="wrap">
+<div class="left">
+  <div class="sub-heading caption_red">
+    <strong>{{ block.settings.sub_heading }}</strong>
+  </div>
+  <div class="head">
+  <h2>{{ block.settings.heading }}</h2>
+  </div>
+</div>
+
+<div class="right">
+{% if block.settings.heading-1 != blank %}  
+<div class="accordion-1">
+  <section class="faqAccordion" id="faq">
+    <div class="faqAccordionWrapper">
+      <button class="accordion"><strong>{{ block.settings.heading-1 }}</strong></button>
+    <div class="panel">
+      <div class="panelInner">
+       {{ block.settings.desc-1 }}          
+      </div>
+    </div>
+	</div>
+  </section>     
+</div>
+{% endif %}  
+{% if block.settings.heading-2 != blank %}    
+<div class="accordion-2">
+  <section class="faqAccordion" id="faq">
+    <div class="faqAccordionWrapper">
+    <button class="accordion"><strong>{{ block.settings.heading-2 }}</strong></button>
+    <div class="panel">
+      <div class="panelInner">
+       {{ block.settings.desc-2 }}           
+      </div>
+    </div>
+	</div>
+  </section>     
+</div>  
+{% endif %}
+{% if block.settings.heading-3 != blank %}    
+<div class="accordion-3">
+  <section class="faqAccordion" id="faq">
+    <div class="faqAccordionWrapper">
+    <button class="accordion"><strong>{{ block.settings.heading-3 }}</strong></button>
+    <div class="panel">
+      <div class="panelInner">
+        {{ block.settings.desc-3 }}          
+      </div>
+    </div>
+	</div>
+  </section>     
+</div>  
+{% endif %}
+{% if block.settings.heading-4 != blank %}  
+<div class="accordion-4">
+  <section class="faqAccordion" id="faq">
+    <div class="faqAccordionWrapper">
+    <button class="accordion"><strong>{{ block.settings.heading-4 }}</strong></button>
+    <div class="panel">
+      <div class="panelInner">
+        {{ block.settings.desc-4 }}          
+      </div>
+    </div>
+	</div>
+  </section>     
+</div> 
+{% endif %}
+{% if block.settings.heading-5 != blank %}  
+<div class="accordion-5">
+  <section class="faqAccordion" id="faq">
+    <div class="faqAccordionWrapper">
+    <button class="accordion"><strong>{{ block.settings.heading-5 }}</strong></button>
+    <div class="panel">
+      <div class="panelInner">
+        {{ block.settings.desc-5 }}          
+      </div>
+    </div>
+	</div>
+  </section>     
+</div> 
+{% endif %}
+{% if block.settings.heading-6 != blank %}  
+<div class="accordion-6">
+  <section class="faqAccordion" id="faq">
+    <div class="faqAccordionWrapper">
+    <button class="accordion"><strong>{{ block.settings.heading-6 }}</strong></button>
+    <div class="panel">
+      <div class="panelInner">
+        {{ block.settings.desc-6 }}          
+      </div>
+    </div>
+	</div>
+  </section>     
+</div> 
+{% endif %} 
+{% if block.settings.heading-7 != blank %}  
+<div class="accordion-7">
+  <section class="faqAccordion" id="faq">
+    <div class="faqAccordionWrapper">
+    <button class="accordion"><strong>{{ block.settings.heading-7 }}</strong></button>
+    <div class="panel">
+      <div class="panelInner">
+        {{ block.settings.desc-7 }}          
+      </div>
+    </div>
+	</div>
+  </section>     
+</div> 
+{% endif %}
+{% if block.settings.heading-8 != blank %}  
+<div class="accordion-8">
+  <section class="faqAccordion" id="faq">
+    <div class="faqAccordionWrapper">
+    <button class="accordion"><strong>{{ block.settings.heading-8 }}</strong></button>
+    <div class="panel">
+      <div class="panelInner">
+        {{ block.settings.desc-8 }}          
+      </div>
+    </div>
+	</div>
+  </section>     
+</div> 
+{% endif %}  
+{% if block.settings.heading-9 != blank %}  
+<div class="accordion-9">
+  <section class="faqAccordion" id="faq">
+    <div class="faqAccordionWrapper">
+    <button class="accordion"><strong>{{ block.settings.heading-9 }}</strong></button>
+    <div class="panel">
+      <div class="panelInner">
+        {{ block.settings.desc-9 }}          
+      </div>
+    </div>
+	</div>
+  </section>     
+</div> 
+{% endif %}  
+{% if block.settings.heading-10 != blank %}  
+<div class="accordion-10">
+  <section class="faqAccordion" id="faq">
+    <div class="faqAccordionWrapper">
+    <button class="accordion"><strong>{{ block.settings.heading-10 }}</strong></button>
+    <div class="panel">
+      <div class="panelInner">
+        {{ block.settings.desc-10 }}          
+      </div>
+    </div>
+	</div>
+  </section>     
+</div> 
+{% endif %}  
+{% if block.settings.heading-11 != blank %}  
+<div class="accordion-11">
+  <section class="faqAccordion" id="faq">
+    <div class="faqAccordionWrapper">
+    <button class="accordion"><strong>{{ block.settings.heading-11 }}</strong></button>
+    <div class="panel">
+      <div class="panelInner">
+        {{ block.settings.desc-11 }}          
+      </div>
+    </div>
+	</div>
+  </section>     
+</div> 
+{% endif %}  
+{% if block.settings.heading-12 != blank %}  
+<div class="accordion-12">
+  <section class="faqAccordion" id="faq">
+    <div class="faqAccordionWrapper">
+    <button class="accordion"><strong>{{ block.settings.heading-12 }}</strong></button>
+    <div class="panel">
+      <div class="panelInner">
+        {{ block.settings.desc-12 }}          
+      </div>
+    </div>
+	</div>
+  </section>     
+</div>   
+{% endif %}  
+</div>
+  
+  
+</div>
+</div>
+
+{% endif %}
+{% endfor %}
+
+<style>
+
+/* FAQ */
+
+.accordion:after {
+  content: '\002B';
+  font-size: 22px;
+  line-height: 22px;
+  color: #ff5442;
+  font-weight: bold;
+  float: left;
+  margin-right: 12px;
+  position: absolute;
+  left: 10;
+  top: 10px;
+  pointer-events: none;
+  display:none;
+}
+.actiVe:after {
+content: "\2212";
+}
+.panel {
+padding: 0 18px;
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.4s ease-out;
+margin-bottom: 0;
+}
+.panelInner{padding: 15px 0 15px 20px;margin: 0;}
+.panelInner p{
+  font-size: 16px;
+  color: #4e5651;
+  font-weight: 300;
+  margin-bottom: 7px;
+}
+  
+#accordion ul li:first-child div { 
+display:block;
+border-top:3px solid #FFCDCD;
+}
+
+.panelInner p{
+  text-align:left;
+}
+.product-faq-accordian .wrap .right{
+  background: #fef6ee;
+  padding: 10px;
+}
+  .accordion {
+  color: #444;
+  background: #fef6ee;
+  cursor: pointer;
+  padding: 12px 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  margin:0px!important;
+  position:relative;
+}
+@media(min-width:780px){
+  .accordion {
+  color: #444;
+  background: #fef6ee;
+  cursor: pointer;
+  padding: 12px 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: 0.4s;
+  margin:0px!important;
+  }
+  .product-faq-accordian .wrap .right{
+  background: #fef6ee;
+  padding: 30px;
+}
+  .product-faq-accordian .main .wrap{
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    align-items:center;
+  }
+}
+/* FAQ End */
+
+</style> 
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("actiVe");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + 10 + "px";
+        } 
+      });
+    }
+  </script>
+
+{% schema %}
+{
+  "name": "FAQs",
+  "class": "product-faq-accordian",
+  "settings": [
+
+  ],
+  "blocks": [
+    {
+      "type": "text_block",
+      "name": "product Name",
+      "settings": [
+        {
+          "type": "product",
+          "id": "featured_product",
+          "label": "Select a product to display the below content"
+        },
+        {
+          "type": "header",
+          "content": "Left Section"
+        },
+        {
+          "id": "sub_heading",
+          "type": "html",
+          "label": "Sub Heading"
+        },
+        {
+          "id": "heading",
+          "type": "text",
+          "label": "Heading"
+        },
+        {
+          "type": "header",
+          "content": "Accordion-1"
+        },
+        {
+          "id": "heading-1",
+          "type": "text",
+          "label": "Heading-1"
+        },
+        {
+          "id": "desc-1",
+          "type": "richtext",
+          "label": "Description-1"
+        },
+        {
+          "type": "header",
+          "content": "Accordion-2"
+        },
+        {
+          "id": "heading-2",
+          "type": "text",
+          "label": "Heading-2"
+        },
+        {
+          "id": "desc-2",
+          "type": "richtext",
+          "label": "Description-2"
+        },
+        {
+          "type": "header",
+          "content": "Accordion-3"
+        },
+        {
+          "id": "heading-3",
+          "type": "text",
+          "label": "Heading-3"
+        },
+        {
+          "id": "desc-3",
+          "type": "richtext",
+          "label": "Description-3"
+        },
+        {
+          "type": "header",
+          "content": "Accordion-4"
+        },
+        {
+          "id": "heading-4",
+          "type": "text",
+          "label": "Heading-4"
+        },
+        {
+          "id": "desc-4",
+          "type": "richtext",
+          "label": "Description-4"
+        },
+        {
+          "type": "header",
+          "content": "Accordion-5"
+        },
+        {
+          "id": "heading-5",
+          "type": "text",
+          "label": "Heading-5"
+        },
+        {
+          "id": "desc-5",
+          "type": "richtext",
+          "label": "Description-5"
+        },
+        {
+          "type": "header",
+          "content": "Accordion-6"
+        },
+        {
+          "id": "heading-6",
+          "type": "text",
+          "label": "Heading-6"
+        },
+        {
+          "id": "desc-6",
+          "type": "richtext",
+          "label": "Description-6"
+        },
+        {
+          "type": "header",
+          "content": "Accordion-7"
+        },
+        {
+          "id": "heading-7",
+          "type": "text",
+          "label": "Heading-7"
+        },
+        {
+          "id": "desc-7",
+          "type": "richtext",
+          "label": "Description-7"
+        },
+        {
+          "type": "header",
+          "content": "Accordion-8"
+        },
+        {
+          "id": "heading-8",
+          "type": "text",
+          "label": "Heading-8"
+        },
+        {
+          "id": "desc-8",
+          "type": "richtext",
+          "label": "Description-8"
+        },
+        {
+          "type": "header",
+          "content": "Accordion-9"
+        },
+        {
+          "id": "heading-9",
+          "type": "text",
+          "label": "Heading-9"
+        },
+        {
+          "id": "desc-9",
+          "type": "richtext",
+          "label": "Description-9"
+        },
+        {
+          "type": "header",
+          "content": "Accordion-10"
+        },
+        {
+          "id": "heading-10",
+          "type": "text",
+          "label": "Heading-10"
+        },
+        {
+          "id": "desc-10",
+          "type": "richtext",
+          "label": "Description-10"
+        },
+        {
+          "type": "header",
+          "content": "Accordion-11"
+        },
+        {
+          "id": "heading-11",
+          "type": "text",
+          "label": "Heading-11"
+        },
+        {
+          "id": "desc-11",
+          "type": "richtext",
+          "label": "Description-11"
+        },
+        {
+          "type": "header",
+          "content": "Accordion-12"
+        },
+        {
+          "id": "heading-12",
+          "type": "text",
+          "label": "Heading-12"
+        },
+        {
+          "id": "desc-12",
+          "type": "richtext",
+          "label": "Description-12"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "Product FAQs"
+      },
+      "category": {
+        "en": "Text"
+      }
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

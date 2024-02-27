@@ -1,0 +1,118 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "73c0d494-c4e5-4271-b558-90c3e120e84d": {
+      "type": "image-with-text",
+      "blocks": {
+        "e7f314e3-9116-4936-bcaf-826f51752612": {
+          "type": "caption",
+          "settings": {
+            "caption": "OUR ETHOS",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "template--16992034029817__73c0d494-c4e5-4271-b558-90c3e120e84d-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Elevated By Nature",
+            "heading_size": "italic"
+          }
+        },
+        "804e202a-daae-4fc7-94ba-d0eb9b368868": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Powered By Science",
+            "heading_size": "h1"
+          }
+        },
+        "template--16992034029817__73c0d494-c4e5-4271-b558-90c3e120e84d-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>OUR PASSION<\/strong><\/p><p>Let’s talk about beauty, shall we?<\/p><p>What does it look like for you?<\/p><p>More importantly, what does it feel like?<\/p><p>We believe that beauty is about feeling confident and comfortable in your own skin. It’s about being happy with how you look and feel.<\/p><p>We want that for every one of our customers. And it’s why we do what we do every day.<br\/><\/p><p>We believe that when science and nature work together, great things happen. We put that into practice to create amazing products that feel good and are better for you, so you look and feel your best.<\/p><p>We start by choosing high-quality, biocompatible ingredients derived from both nature and science. We select only those with proven efficacy, harnessing their regenerative and therapeutic properties to create perfectly balanced formulations that nourish the natural beauty and health of your skin. It’s beauty, done better.<\/p><p>The result is a fresh generation of products that are incredibly effective and easy-to-use, giving you a convenient, at-home alternative to costly and time-consuming beauty routines.<\/p><p>Hit refresh on your beauty routine with Hello. You and your skin deserve it.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "e7f314e3-9116-4936-bcaf-826f51752612",
+        "template--16992034029817__73c0d494-c4e5-4271-b558-90c3e120e84d-heading-1",
+        "804e202a-daae-4fc7-94ba-d0eb9b368868",
+        "template--16992034029817__73c0d494-c4e5-4271-b558-90c3e120e84d-text-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/eathos_img_e983247b-1979-4936-aa1f-ce7f93d8cfe5.png",
+        "bg_color": "",
+        "radius": 0,
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "3a7482e4-608d-49fa-94d0-2d4628c7acb3": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16992034029817__3a7482e4-608d-49fa-94d0-2d4628c7acb3-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>OUR PURPOSE<\/strong><\/p><p><strong><br\/><\/strong>How great is it when you find a beauty product that actually works?<\/p><p>It’s like, finally—something that breaks through all the noise and just does what it promises.<br\/>When products do that, they earn your trust. That’s not easy to do in this industry, but we can’t imagine ever settling for less. It’s why we make sure every Hello product you reach for and rely on measures up to your highest expectations. And ours.<\/p><p>That means saying “move over” to tired and expired products that constantly disappoint. Hello skips the hype and focuses on what works. For starters, we use only high-quality ingredients to create unique, perfectly balanced formulations that naturally work with your skin to produce results you can see and feel.<br\/>We’re also incredibly picky about how and where we source ingredients, working only with a very select group of global suppliers who meet our strict qualifications to ensure everything we put into our products is ethically sourced, cruelty-free, and highly effective.<\/p><p>Finally, we never, ever cut corners. We put every formulation through rigorous testing and refinements to make sure each delivers the desired results.<\/p><p>Everything we do is about creating products that work better and are better for you. It’s why you can count on Hello to bring you beauty solutions you can trust to really work, every time.<\/p><p>Beautifully.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16992034029817__3a7482e4-608d-49fa-94d0-2d4628c7acb3-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "a8d1a419-6a1a-4528-b965-549f0e7bb38a": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16992034029817__a8d1a419-6a1a-4528-b965-549f0e7bb38a-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>OUR PROMISE<\/strong><\/p><p>Saying Hello means saying goodbye to unhealthy additives<\/p><ul><li>Staying true to your values is a beautiful thing.<\/li><li>It’s why Hello says goodbye to anything that’s not good for you, your skin or our planet.<\/li><li>We know that’s important to you too. So we go out of our way to be as transparent as possible about what we put into our products, and what we leave out. No secrets, no exceptions. Every package comes with a full list of all the ingredients included as well as those we’ve made a conscious decision to exclude.<\/li><li>That way, you always know what our products are made of, and what we stand for. That’s just better for everyone. So why not get to know Hello? We think you’ll find there’s a lot to feel good about.<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16992034029817__a8d1a419-6a1a-4528-b965-549f0e7bb38a-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "73c0d494-c4e5-4271-b558-90c3e120e84d",
+    "3a7482e4-608d-49fa-94d0-2d4628c7acb3",
+    "a8d1a419-6a1a-4528-b965-549f0e7bb38a"
+  ]
+}

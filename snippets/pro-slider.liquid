@@ -1,0 +1,237 @@
+<section class="primary-images">
+
+    <!-- Primaty Slider -->
+    <div class="owl-carousel slider" id="sync1">
+      {% for media in product.media %}
+        {% case media.media_type %}
+          {% when 'image' %}
+            <div class="product-image">
+              {%- assign extension = media | img_url: '1x1' | split: '/' | last | split: '?' | first | split: '.' | last -%}
+              {%- if extension == 'gif' -%}
+                <img class="product-image__thumb lazyload--gif"
+                     sizes="(max-width: 749px) 100vw, 60vw"
+                     data-srcset="{{ media | img_url: '1920x' }} 1920w, {{ media | img_url: '1600x' }} 1600w, {{ media | img_url: '1200x' }} 1200w, {{ media | img_url: '800x' }} 800w, {{ media | img_url: '600x' }} 600w"
+                     />
+              {%- else -%}
+                {%- assign img_url = media | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                <img  class="product-image__thumb lazyload"
+                  alt="{{ media.alt }}"
+                  data-src="{{ img_url }}"
+                  data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                  data-aspectratio="{{ media.aspect_ratio }}"
+                  data-sizes="auto"
+                  data-image>
+              {%- endif -%}
+            </div>
+          {% when 'external_video' %}
+            <div class="product-image product-video">
+              <div class="video-src" data-src="https://www.youtube.com/embed/{{media.external_id}}?autoplay=1"></div>
+              <div class="video-wrapper">
+                <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video-iframe" src="about:blank"></iframe>
+              </div>
+            </div>
+          {% when 'video' %}
+            <div class="product-single__video">
+              {{ media | video_tag: controls: true }}
+            </div>
+          {% when 'model' %}
+            <div class="product-single__media">
+              {{ media | model_viewer_tag }}
+            </div>
+          {% else %}
+            <div class="product-single__media">
+              {{ media | media_tag }}
+            </div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+  
+    <!-- Thumbnails Slider -->
+    <div class="owl-carousel navigation-thumbs" id="sync2">
+      {% for media in product.media %}
+        {% case media.media_type %}
+          {% when 'image' %}
+            <div class="product-image">
+              <img src="{{ media | img_url: '230x150', crop: 'top', format: 'jpg' }}" alt="{{ media.alt }}">
+            </div>
+          {% when 'external_video' %}
+            <div class="product-image product-video">
+              <img src="https://img.youtube.com/vi/{{media.external_id}}/maxresdefault.jpg">
+            </div>
+          {% when 'video' %}
+            <div class="product-single__video">
+              {{ media | video_tag: controls: true }}
+            </div>
+          {% when 'model' %}
+            <div class="product-single__media">
+              {{ media | model_viewer_tag }}
+            </div>
+          {% else %}
+            <div class="product-single__media">
+              {{ media | media_tag }}
+            </div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </section>
+  
+  <style>
+    .owl-carousel{
+      width: 76%;
+      margin: 0 auto;
+    }
+    #sync1 .product-image {
+      height: 70vh;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+  
+    .product-image__thumb {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+    }
+  
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  
+    @media (max-width: 749px){
+      #sync1 .product-image{
+        height: 40vh;
+      }
+      .owl-carousel{
+        width: 100%;
+      }
+    }
+  </style>
+  
+  <script>
+    /**
+     * Slider
+     */
+    var sync1 = $(".slider");
+    var sync2 = $(".navigation-thumbs");
+    var thumbnailItemClass = ".owl-item";
+    var slides = sync1.owlCarousel({
+      video: true,
+      startPosition: 0,
+      items: 1,
+      loop: true,
+      margin: 10,
+      autoplay: false,
+      autoplayTimeout: 6000,
+      autoplayHoverPause: false,
+      nav: false,
+      dots: false,
+      touchDrag: true,
+      mouseDrag: true
+    })
+      .on("changed.owl.carousel", syncPosition)
+      .on("changed.owl.carousel", showLazyGif);
+    
+    function showLazyGif(event) {
+      const $currentSlide = sync1.find(".owl-item").eq(event.item.index);
+      const $gif = $currentSlide.find(".lazyload--gif");
+      if ($gif.length > 0 && $gif.data("srcset")) {
+        $gif.attr("srcset", $gif.data("srcset"));
+        $gif.removeAttr("data-srcset");
+      }
+    }
+  
+    function syncPosition(el) {
+      $owl_slider = $(this).data("owl.carousel");
+      var loop = $owl_slider.options.loop;
+  
+      if (loop) {
+        var count = el.item.count - 1;
+        var current = Math.round(el.item.index -(el.item.count / 2) - .5);
+        if (current < 0) {
+          current = count;
+        }
+        if (current > count) {
+          current = 0;
+        }
+      } else {
+        var current = el.item.index;
+      }
+  
+  
+      var owl_thumbnail = sync2.data("owl.carousel");
+      var itemClass = "." + owl_thumbnail.options.itemClass;
+      var thumbnailCurrentItem = sync2
+        .find(itemClass)
+        .removeClass("synced")
+        .eq(current);
+  
+      thumbnailCurrentItem.addClass("synced");
+      if (! thumbnailCurrentItem.hasClass("active")) {
+        var duration = 300;
+        sync2.trigger("to.owl.carousel", [current, duration, true]);
+      }
+  
+  
+      // Reset Iframe video
+      $(".video-iframe").each(function () {
+        this.src = "about:blank";
+      });
+  
+      // Set Iframe video
+      var videoSrcVal = "";
+      var currentSlide = sync1.find(".owl-item").eq(el.item.index);
+      var videoSrc = currentSlide.find(".video-src");
+      var videoIframe = currentSlide.find(".video-iframe");
+  
+  
+      if (videoSrc.length) {
+        videoSrcVal = videoSrc[0].dataset.src;
+        videoIframe[0].src = videoSrcVal;
+      }
+  
+    }
+  
+    var thumbs = sync2
+      .owlCarousel({
+        startPosition: 0,
+        items: 4,
+        loop: false,
+        margin: 10,
+        autoplay: false,
+        nav: true,
+        dots: false,
+        touchDrag: true,
+        mouseDrag: true,
+        navText: [
+          "<img src='https://cdn.shopify.com/s/files/1/0570/4777/7459/files/prev.svg?v=1622637791'>", "<img src='https://cdn.shopify.com/s/files/1/0570/4777/7459/files/next.svg?v=1622637790https://cdn.shopify.com/s/files/1/0570/4777/7459/files/next.svg?v=1622637790'>"
+        ],
+        onInitialized: function (e) {
+          var thumbnailCurrentItem = $(e.target).find(thumbnailItemClass).eq(this._current);
+          thumbnailCurrentItem.addClass("synced");
+        }
+      })
+      .on("click", thumbnailItemClass, function (e) {
+        e.preventDefault();
+        var duration = 300;
+        var itemIndex = $(e.target).parents(thumbnailItemClass).index();
+        sync1.trigger("to.owl.carousel", [itemIndex, duration, true]);
+      })
+      .on("changed.owl.carousel", function (el) {
+        var number = el.item.index;
+        $owl_slider = sync1.data("owl.carousel");
+        $owl_slider.to(number, 100, true);
+      });
+  </script>

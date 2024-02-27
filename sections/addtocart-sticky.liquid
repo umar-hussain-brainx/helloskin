@@ -1,0 +1,190 @@
+{% if template contains 'product' %}
+{% assign subscription_product = product.metafields.subscriptions %}
+
+{% assign variant_map = subscription_product.original_to_hidden_variant_map | default: false %}
+{% if variant_map %}
+{% capture variant_to_duplicate %}{% for variant in variant_map %}{% if variant[1]['discount_variant_id'] %}{{ variant[1]['discount_variant_id'] }}{% endif %}{% endfor %}{% endcapture %}
+{% capture variant_to_price %}{% for variant in product.variants %}{{ variant.price }}{% endfor %}{% endcapture %}
+{% capture duplicate_to_price %}{% for variant in variant_map %}{% if variant[1]['discount_variant_id'] %}{{ variant[1]['discount_variant_price'] | replace: ".", "" }}{% endif %}{% endfor %}{% endcapture %}
+{% endif %}
+<div id="addtocart-sticky">
+  <div class="addtocart_sticky_wrap page-width">
+    <div class="sticky_item_info">
+      <div class="sticky_item_img">
+        <img src="{{ product.featured_image | image_url: width: 100, height: 100 }}">
+      </div>
+      <div class="sticky_item_titles">
+        <h1>{{ product.title }} </h1>
+        <h5>{{ product.metafields.descriptors.subtitle }}</h5>
+      </div>
+    </div>
+    <form action="/cart/add" method="post">
+      <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+      <input type="radio" min="1" id="quantity" checked name="quantity" value="1"/>
+      <span class="sticky-bar-price">
+        {{ product.price | money }}
+        {% comment %}
+        {% if duplicate_to_price != blank %} 
+          {{ duplicate_to_price | money  }} 
+        {% else %} 
+          {{ product.price | money }}  
+        {% endif %}
+        {% endcomment %}
+      </span>
+      <button class="button btn sticky-add-to-cart" type="button" onclick="$('.btn.product-form__cart-submit').click()">Add To Cart</button>
+    </form>
+  </div>
+</div>
+
+<style>
+  #addtocart-sticky{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9;
+    background: #fff;
+    padding-top: 5.5px;
+    padding-bottom:6px;
+    border-top: 1px solid #e2e2e2;
+    transition: .25s all ease-in-out;
+  }
+  .addtocart_sticky_wrap{
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .addtocart_sticky_wrap form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
+  #addtocart-sticky button{
+    height:40px;
+    margin:0 5px;
+    vertical-align: middle;
+  }
+  #addtocart-sticky input{
+    display: none;
+  }
+  #addtocart-sticky button{
+    padding:0 25px;
+    font-weight:bold;
+  }
+  #addtocart-sticky  span {
+    font-weight: bold;
+    display: inline;
+    padding-right: 30px;
+}
+  .sticky_item_info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sticky_item_info h1 {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin:5px 0;
+}
+
+.sticky_item_info h5 {
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+}
+.sticky_item_img {
+  padding-right: 20px;
+}
+.addtocart_sticky_wrap .rc-container-wrapper {
+    display: none;
+}
+
+#addtocart-sticky img{
+  width:50px;
+  display:block;
+}
+
+@media only screen and (max-width:767px){
+  #addtocart-sticky {
+    padding-top: 9.5px;
+    padding-bottom: 10px;
+}
+  .sticky_item_info {
+      display: none;
+  }
+  .addtocart_sticky_wrap form{
+    margin-left:unset;
+    width:100%;
+  }
+  .addtocart_sticky_wrap.page-width {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+  .sticky-bar-price{
+    display:none !important;
+  }
+  #addtocart-sticky button {
+    height: 45px;
+    width:100%;
+    padding: 0 5px;
+    font-size: 14px;
+  }
+}
+</style>
+
+{% endif %}
+
+<script>
+
+function isInViewport(element) {
+  var elementTop = element.offsetTop;
+  var elementBottom = elementTop + element.offsetHeight;
+
+  var viewportTop = window.pageYOffset || document.documentElement.scrollTop;
+  var viewportBottom = viewportTop + window.innerHeight;
+
+  return elementBottom > viewportTop && elementTop < viewportBottom;
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  window.addEventListener('resize', function() {
+    if (isInViewport(document.querySelector('.product-form'))) {
+      document.getElementById('addtocart-sticky').style.display = 'none';
+    } else {
+      document.querySelector('.addtocart_sticky_wrap').style.display = 'flex';
+      document.getElementById('addtocart-sticky').style.display = 'block';
+    }
+  });
+
+  window.addEventListener('scroll', function() {
+    if (isInViewport(document.querySelector('.product-form'))) {
+      document.getElementById('addtocart-sticky').style.display = 'none';
+    } else {
+      document.querySelector('.addtocart_sticky_wrap').style.display = 'flex';
+      document.getElementById('addtocart-sticky').style.display = 'block';
+    }
+  });
+});
+</script>
+{% schema %}
+{
+  "name": "Sticky Add to Cart",
+  "class": "Product-Sticky-Add-to-Cart",
+  "settings": [
+
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "Product Sticky Add to Cart"
+      },
+      "category": {
+        "en": "Text"
+      }
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,114 @@
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "f0397213-2b28-4a36-8c2d-3d2b3b97622a": {
+      "type": "Logo-bar",
+      "blocks": {
+        "sections--16989491790073__f0397213-2b28-4a36-8c2d-3d2b3b97622a-logo_image-1": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hello_Skincare_icon-01.png",
+            "link": ""
+          }
+        },
+        "sections--16989491790073__f0397213-2b28-4a36-8c2d-3d2b3b97622a-logo_image-2": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon-02.png",
+            "link": ""
+          }
+        },
+        "sections--16989491790073__f0397213-2b28-4a36-8c2d-3d2b3b97622a-logo_image-3": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hello_Skincare_icon-03.png",
+            "link": ""
+          }
+        },
+        "dadc25a4-e1fb-4be5-a880-31b5c768b192": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hello_Skincare_icon-04.png",
+            "link": ""
+          }
+        },
+        "3757cada-48ff-4eb1-9fb3-e330a3349123": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hello_Skincare_icon-05.png",
+            "link": ""
+          }
+        },
+        "sections--16989491790073__f0397213-2b28-4a36-8c2d-3d2b3b97622a-logo_image-4": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon-06.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "sections--16989491790073__f0397213-2b28-4a36-8c2d-3d2b3b97622a-logo_image-1",
+        "sections--16989491790073__f0397213-2b28-4a36-8c2d-3d2b3b97622a-logo_image-2",
+        "sections--16989491790073__f0397213-2b28-4a36-8c2d-3d2b3b97622a-logo_image-3",
+        "dadc25a4-e1fb-4be5-a880-31b5c768b192",
+        "3757cada-48ff-4eb1-9fb3-e330a3349123",
+        "sections--16989491790073__f0397213-2b28-4a36-8c2d-3d2b3b97622a-logo_image-4"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "8183cb98-68c0-447b-9dfd-a48459ced989": {
+          "type": "link_list",
+          "settings": {
+            "heading": "<strong>QUICK LINKS<\/strong>",
+            "menu": "footer-primary"
+          }
+        },
+        "0683f8dc-f665-4389-8599-ed38d631a2ae": {
+          "type": "link_list",
+          "settings": {
+            "heading": "<strong>POLICIES<\/strong>",
+            "menu": "policies"
+          }
+        },
+        "ce707570-e2b6-47ea-a071-4be738b19217": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo.png",
+            "image_width": 50,
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "8183cb98-68c0-447b-9dfd-a48459ced989",
+        "0683f8dc-f665-4389-8599-ed38d631a2ae",
+        "ce707570-e2b6-47ea-a071-4be738b19217"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "newsletter_enable": true,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": false,
+        "show_social": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": false,
+        "show_policy": false,
+        "margin_top": 0,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "f0397213-2b28-4a36-8c2d-3d2b3b97622a",
+    "footer"
+  ]
+}

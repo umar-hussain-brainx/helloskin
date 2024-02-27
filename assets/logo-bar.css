@@ -1,0 +1,47 @@
+.logo-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 0px;
+}
+.logo_main{
+  margin:5rem auto 2rem;
+}
+.logo-bar__item {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 160px;
+    margin: 0 27.5px 35px;
+}
+.logo-bar__image {
+    display: block;
+    margin: 0 auto;
+}
+.text-center {
+    text-align: center;
+}
+.logo-bar__item{
+  width:100%;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px)  {
+  .logo-bar__item {
+    max-width: 130px;
+    margin: 0 2.5px 35px;
+}
+}
+@media(max-width:767px){
+  .logo-list-container {
+    overflow: auto;
+   }
+}
+@media(max-width:768px){
+   .logo_main{
+      margin:2rem auto ;
+   }
+  .logo-bar__item{
+    margin: 0 10.5px 35px;
+  }
+}
+

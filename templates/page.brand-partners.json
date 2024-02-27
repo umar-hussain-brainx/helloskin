@@ -1,0 +1,431 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "180bc402-6769-41da-ba4c-c0f181db3bf7": {
+      "type": "image-banner",
+      "blocks": {
+        "ae951a68-7b67-49b4-9f6c-239ee8e91968": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "HELLO SKINCARE BRAND PARTNER PROGRAM",
+            "heading_size": "h1"
+          }
+        },
+        "template--16992052084985__180bc402-6769-41da-ba4c-c0f181db3bf7-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "Join our <strong>Brand Partner Program<\/strong> today and start racking up redemptions to earn valuable rewards, starting with a FREE tube of Lash Therapy!",
+            "text_style": "subtitle"
+          }
+        },
+        "template--16992052084985__180bc402-6769-41da-ba4c-c0f181db3bf7-buttons-1": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "SIGN UP NOW",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "LOGIN",
+            "button_link_2": "",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "ae951a68-7b67-49b4-9f6c-239ee8e91968",
+        "template--16992052084985__180bc402-6769-41da-ba4c-c0f181db3bf7-text-1",
+        "template--16992052084985__180bc402-6769-41da-ba4c-c0f181db3bf7-buttons-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Hello_Skincare_Updated_Image.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "43e8f229-2cca-465f-8820-c4be3ba766fa": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16992052084985__43e8f229-2cca-465f-8820-c4be3ba766fa-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "More discount code redemptions",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--16992052084985__43e8f229-2cca-465f-8820-c4be3ba766fa-heading-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "ff8e5e85-b3df-4a1e-8386-ba7fd358b57e": {
+      "type": "multicolumn",
+      "blocks": {
+        "b1768288-d7f9-46e5-b32e-f6f7ffe1e261": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16992052084985__ff8e5e85-b3df-4a1e-8386-ba7fd358b57e-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_from_2023-09-19_17-37-12.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "53cc565e-3ad4-4d0e-99e6-a0fe4c5d2072": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "b1768288-d7f9-46e5-b32e-f6f7ffe1e261",
+        "template--16992052084985__ff8e5e85-b3df-4a1e-8386-ba7fd358b57e-column-1",
+        "53cc565e-3ad4-4d0e-99e6-a0fe4c5d2072"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "third",
+        "image_ratio": "circle",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "6113165a-e156-4b03-9058-a7f59e4e2924": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16992052084985__6113165a-e156-4b03-9058-a7f59e4e2924-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "More free products, cash bonuses, and higher partner status for special VIP perks only Premier Partners have access to!",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--16992052084985__6113165a-e156-4b03-9058-a7f59e4e2924-heading-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "7e901446-0861-43ea-9e4f-bfddbaa1640c": {
+      "type": "brand-partners-tiers",
+      "settings": {
+        "heading": "Our Brand Partner Program has <span>3 tiers.<\/span>",
+        "chart_image": "shopify:\/\/shop_images\/Group_4.png",
+        "bottom_heading_1": "NEW BRAND PARTNER",
+        "desc_1": "Every new affiliate starts here, but it’s easy to move up fast! You’ll receive a 10% custom\ndiscount code to share with your friends, followers and family. Once your code has 10\nredemptions, you’ll earn a six-month supply of Lash Therapy and be promoted to a Level Two\nBrand Partner. Wooo!",
+        "specs1": "<ul>\n<li>10% discount code to share<\/li>\n<li>Earn a free six-month product supply after 10 code redemptions<\/li>\n<\/ul>",
+        "bottom_heading_2": "LEVEL TWO BRAND PARTNER",
+        "desc_2": "You’re on the fast-track to success! At this level, you’ll already have at least 10 code\nredemptions under your belt along with a brand new 20% custom discount code to share. Once\nyour 20% discount code has 10 redemptions, you’ll earn another free six-month supply of Lash\nTherapy and be promoted to Premier Partner. Yesss, please!",
+        "specs2": "<ul>\n<li>20% discount code to share<\/li>\n<li>Earn a free six-month product supply after 10 code redemptions<\/li>\n<\/ul>",
+        "bottom_heading_3": "PREMIER PARTNER",
+        "desc_3": "At this level, the rewards and perks just keep coming! Premier Partners keep their 20% discount\nand earn 10% cash back on every single code redemption. Plus, you’ll get a personalized VIP\ncode that gives you early access to every Hello Skincare sale and exclusive access to our special\nflash sales. You’ll also get free product refills and giveaways. Plus, the Premier Partner with the\nmost redemptions every month gets an additional $100 cash bonus! Cha-ching!",
+        "specs3": "<ul>\n<li>20% discount code to share<\/li>\n<li>10% cash back on redemptions<\/li>\n<li>More free products<\/li>\n<\/ul>"
+      }
+    },
+    "9c11d2a9-a085-4133-ae53-f585b9b6ea1e": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16992052084985__9c11d2a9-a085-4133-ae53-f585b9b6ea1e-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Some tips & tricks to speed your success!",
+            "heading_size": "h1"
+          }
+        },
+        "7641a72f-8407-44df-b912-29aa3ebc21a6": {
+          "type": "heading",
+          "settings": {
+            "heading": "We know you know your followers better than anyone, but we’ve seen a few sure-fire ways to help you rack up those redemptions even faster. Here’s the 4-1-1…",
+            "heading_size": "h2"
+          }
+        },
+        "template--16992052084985__9c11d2a9-a085-4133-ae53-f585b9b6ea1e-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>Post a well-lit, front-facing “Before\/After” collage to pique interest<\/li><li>Building on that last tip, also consider a collage that goes a step further by showing Before (top photo), After (middle photo), and After with Mascara (bottom photo).<\/li><li>Share a short testimonial about your authentic Lash Therapy transformation.<\/li><li>Make Hello and Lash Therapy a regular conversation topic. The more stories you share, the more interest you’ll build.<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16992052084985__9c11d2a9-a085-4133-ae53-f585b9b6ea1e-heading-1",
+        "7641a72f-8407-44df-b912-29aa3ebc21a6",
+        "template--16992052084985__9c11d2a9-a085-4133-ae53-f585b9b6ea1e-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "f762fd12-5f0a-4645-9de8-a5e3d75dd80a": {
+      "type": "brand-partner-registration-form",
+      "settings": {
+      }
+    },
+    "c9309da9-e0a3-42c1-ac7c-f2df888f60a1": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16992052084985__c9309da9-e0a3-42c1-ac7c-f2df888f60a1-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_57.webp",
+            "title": "Before and After",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16992052084985__c9309da9-e0a3-42c1-ac7c-f2df888f60a1-column-1"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 1,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "a87e0602-2fea-4c7a-b199-38e5e61036a0": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16992052084985__a87e0602-2fea-4c7a-b199-38e5e61036a0-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_-1.webp",
+            "title": "",
+            "text": "<p><strong>A Glamour Shot <\/strong>can really showcase your lashes <\/p><p>when paired with a testimony and your discount code<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16992052084985__a87e0602-2fea-4c7a-b199-38e5e61036a0-column-1"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "b0360642-f73a-46d8-a7c1-000898d8a86e": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16992052084985__b0360642-f73a-46d8-a7c1-000898d8a86e-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_59_Copy_2.webp",
+            "title": "<strong>Or maybe a comparison post would represent your experience well.<\/strong>",
+            "text": "<p>Show how Lash Therapy measures up to another product you’ve used to enhance your lashes, <\/p><p>like another serum, falsies\/strips or extensions and why you think Lash Therapy is a better solution.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16992052084985__b0360642-f73a-46d8-a7c1-000898d8a86e-column-1"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "e9cd2816-c79c-46f0-a774-2148ce4253f0": {
+      "type": "Faq-section-dynamic",
+      "blocks": {
+        "template--16992052084985__e9cd2816-c79c-46f0-a774-2148ce4253f0-faq-1": {
+          "type": "faq",
+          "settings": {
+            "heading-1": "Is Hello Skincare a “clean beauty” brand?",
+            "desc-1": "<p>The term “clean beauty” gets thrown around a lot these days, but its meaning isn’t always clear or consistent from brand to brand. So rather than just jumping on the bandwagon, we think it’s more important to let you know exactly what we mean by “clean” here at Hello.  Hello is absolutely meticulous about every aspect of our product formulations, and we make a conscious decision to eliminate ingredients that are proven harmful. All of our products are Vegan-friendly and cruelty-free as well as 100% free of all parabens, sulfates, phosphates, silicons, and synthetic dyes and fragrances. Hello is clean you can count on.<\/p>"
+          }
+        },
+        "e1742b40-e1c3-4869-971e-2e2ff58e997f": {
+          "type": "faq",
+          "settings": {
+            "heading-1": "Do you offer a money back guarantee?",
+            "desc-1": "<p><\/p><p>Yes! We don’t just believe in our products, we stand behind them with a 60-day money-back guarantee on any first-time purchase. If for any reason you’re not satisfied with your Hello product purchase, simply return the unused portion to us, and we’ll refund your total purchase price minus initial shipping and handling charges.<\/p>"
+          }
+        },
+        "52eecab5-4c7e-49d7-8245-5fdaae93ab74": {
+          "type": "faq",
+          "settings": {
+            "heading-1": "Is Hello Cruelty-Free?",
+            "desc-1": "<p>Always!  Hello never tests on animals, and we only source our ingredients from a select group of premium suppliers that uphold the same standard.<\/p>"
+          }
+        },
+        "9a988848-3036-4995-8b91-bcbc9b8bde1a": {
+          "type": "faq",
+          "settings": {
+            "heading-1": "Is Hello Skincare Vegan-Friendly?",
+            "desc-1": "<p>Absolutely! Hello Skincare’s entire product line is Vegan-friendly.<\/p>"
+          }
+        },
+        "06ea6c6f-b703-442b-8c85-023f697f5e2d": {
+          "type": "faq",
+          "settings": {
+            "heading-1": "Is shipping included?",
+            "desc-1": "<p>The answer is <em>mostly<\/em> yes! Hello offers free shipping on all U.S. and Canadian orders. However, we’re not able to provide free shipping to other countries at this time. For these international orders, shipping is calculated during checkout.<\/p>"
+          }
+        },
+        "749c3997-aea8-41f5-b4ec-cd9f15851baa": {
+          "type": "faq",
+          "settings": {
+            "heading-1": "When will my order ship?",
+            "desc-1": "<p>We do our best to get our products into your hands as quickly as possible. Every order is shipped within 1-2 business days. Once your order is processed, you’ll get an email confirmation with tracking details that keep you posted on your order’s estimated arrival.<\/p>"
+          }
+        },
+        "7b32e6fa-27e5-4ee7-8198-b0b86aa99754": {
+          "type": "faq",
+          "settings": {
+            "heading-1": "How is Hello different from other beauty products?",
+            "desc-1": "<p>At Hello, we believe that when science and nature work together, great things happen. We put that into practice to create amazing products that feel good and are better for you, so you look and feel your best. It’s why we choose only high-quality, biocompatible ingredients that have proven efficacy. We harness their regenerative and therapeutic properties to create perfectly balanced formulations that nourish the natural beauty and health of your skin. Hello is simply beauty, done better.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16992052084985__e9cd2816-c79c-46f0-a774-2148ce4253f0-faq-1",
+        "e1742b40-e1c3-4869-971e-2e2ff58e997f",
+        "52eecab5-4c7e-49d7-8245-5fdaae93ab74",
+        "9a988848-3036-4995-8b91-bcbc9b8bde1a",
+        "06ea6c6f-b703-442b-8c85-023f697f5e2d",
+        "749c3997-aea8-41f5-b4ec-cd9f15851baa",
+        "7b32e6fa-27e5-4ee7-8198-b0b86aa99754"
+      ],
+      "settings": {
+        "sub_heading": "KNOW YOUR PRODUCTS",
+        "heading": "General Questions & Answers"
+      }
+    },
+    "5176e1fb-2459-46c7-8bff-059527b2a7b5": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "More products from us",
+        "heading_size": "h1",
+        "description": "<p>Skin care is a personal journey and we’re here to guide you along the way.<\/p><p> Trusted to bring you FDA-approved, authentic products since 2012<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "featured-collection",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-2",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "180bc402-6769-41da-ba4c-c0f181db3bf7",
+    "43e8f229-2cca-465f-8820-c4be3ba766fa",
+    "ff8e5e85-b3df-4a1e-8386-ba7fd358b57e",
+    "6113165a-e156-4b03-9058-a7f59e4e2924",
+    "7e901446-0861-43ea-9e4f-bfddbaa1640c",
+    "9c11d2a9-a085-4133-ae53-f585b9b6ea1e",
+    "f762fd12-5f0a-4645-9de8-a5e3d75dd80a",
+    "c9309da9-e0a3-42c1-ac7c-f2df888f60a1",
+    "a87e0602-2fea-4c7a-b199-38e5e61036a0",
+    "b0360642-f73a-46d8-a7c1-000898d8a86e",
+    "e9cd2816-c79c-46f0-a774-2148ce4253f0",
+    "5176e1fb-2459-46c7-8bff-059527b2a7b5"
+  ]
+}

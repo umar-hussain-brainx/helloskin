@@ -1,0 +1,68 @@
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-bar-0": {
+          "type": "announcement",
+          "settings": {
+            "text": "Over 100,000+ Lash Therapy Sold!",
+            "link": "shopify:\/\/products\/lash-conditioner"
+          }
+        },
+        "96e7065d-71c7-42bc-9047-9f02266c92dd": {
+          "type": "announcement",
+          "settings": {
+            "text": "60 Day Money Back Guarantee",
+            "link": "shopify:\/\/products\/lash-conditioner"
+          }
+        },
+        "5e1a063d-ac3b-4906-89e4-b0eaeb98c1f4": {
+          "type": "announcement",
+          "settings": {
+            "text": "Click Here for Lash Greatness",
+            "link": "shopify:\/\/products\/lash-conditioner"
+          }
+        }
+      },
+      "block_order": [
+        "announcement-bar-0",
+        "96e7065d-71c7-42bc-9047-9f02266c92dd",
+        "5e1a063d-ac3b-4906-89e4-b0eaeb98c1f4"
+      ],
+      "settings": {
+        "color_scheme": "scheme-7906afec-565e-4fa2-b607-645e654eb152",
+        "show_line_separator": true,
+        "show_social": false,
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "logo_position": "middle-left",
+        "menu": "primary-menu",
+        "menu_type_desktop": "dropdown",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": true,
+        "color_scheme": "background-1",
+        "menu_color_scheme": "background-1",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}

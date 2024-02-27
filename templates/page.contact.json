@@ -1,0 +1,39 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "c7666f26-fa2a-49ba-9adb-ee753dde9ff1": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% style %}\n.page-title{\ndisplay:none;}\n{% endstyle %}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "form",
+    "c7666f26-fa2a-49ba-9adb-ee753dde9ff1"
+  ]
+}

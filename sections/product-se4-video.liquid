@@ -1,0 +1,222 @@
+{% style %}
+.product-se-4 {
+  padding-top: 55px;
+}
+.product-se-4 .product-se4main {
+  display: flex;
+  align-items: center;
+}
+.product-se-4 .product-se4main .left {
+  width: 50%;
+  padding: 6% 10%;
+}
+.product-se-4 .product-se4main .desc li {
+  font-size: 16px;
+  color: #4e5651;
+  margin-bottom: 22px;
+  padding-left: 55px;
+  position: relative;
+  list-style: none;
+}
+.product-se-4 .product-se4main .left .sub_heading strong {
+  display: block;
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #ff5442;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.product-se-4 .product-se4main .left .header h2 {
+  font-size: 44px;
+  line-height: normal;
+  font-weight: 300;
+  text-shadow: none;
+  color: #4e5651;
+  text-transform: none;
+  letter-spacing: 0;
+  margin:0px;
+}
+.product-se-4 .product-se4main .desc ul {
+  width: 80%;
+}
+.product-se-4 .product-se4main .left {
+  width: 50%;
+  padding: 6% 10%;
+}
+  .product-se-4 .product-se4main .right {
+    width: 50%;
+}
+  .product-se-4 .product-se4main .desc li span {
+    background: #ff5442;
+    position: absolute;
+    left: 0;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .product-se-4 .product-se4main .right img{
+   width: 100%;
+    height: 100%;
+ }
+  .product-se-4 .product-se4main .desc ul {
+    width: 100%;
+    padding: 0px;
+  }
+  @media(max-width:768px){
+    .product-se-4 .product-se4main {
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+    }
+    .product-se-4 .product-se4main .left,.product-se-4 .product-se4main .right{
+      width:100%;
+    }
+    .product-se-4 {
+    padding-top: 0px;
+  }
+  }
+  
+  {% endstyle %}
+
+
+{% assign product_handle = product.handle %}
+{% for block in section.blocks %}
+{% if product_handle == block.settings.featured_product %}
+
+<div class="product-se4video">
+<div class="product-se4main">
+  
+  <div class="left">
+    <div class="sub_heading caption_red">
+      <strong>{{ block.settings.sub_heading }}</strong>
+    </div>
+    <h2>{{ block.settings.heading }}</h2>
+	<div class="desc">
+    {{ block.settings.desc }}
+    </div>
+  </div>
+  
+  <div class="right">
+    {% if block.settings.videoURL != blank %}
+      <video width="100%" autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto"  class="product-se4video__video">
+        <source data-src="{{ block.settings.videoURL }}" type="video/mp4">
+      </video>
+    {% else %}
+        {%- assign widths = '165, 360, 535, 750, 1070' -%}
+          {{
+            block.settings.image
+            | image_url: width: 900
+            | image_tag: loading: 'lazy',  widths: widths , id:section.id
+          }}
+
+    {% endif %}
+  </div>
+
+</div>
+</div>
+
+{% endif %}
+{% endfor %}
+
+{% schema %}
+{
+  "name": "Product Se-4",
+  "class": "product-se-4",
+  "settings": [
+
+  ],
+  "blocks": [
+    {
+      "type": "text_block",
+      "name": "product Name",
+      "settings": [
+        {
+          "type": "product",
+          "id": "featured_product",
+          "label": "Select a product to display the below content"
+        },
+        {
+          "type": "header",
+          "content": "Left Section"
+        },
+        {
+          "id": "sub_heading",
+          "type": "text",
+          "label": "Sub Heading"
+        },
+        {
+          "id": "heading",
+          "type": "text",
+          "label": "Heading"
+        },
+        {
+          "id": "desc",
+          "type": "html",
+          "label": "Description"
+        },
+        {
+          "type": "header",
+          "content": "Video Section"
+        },
+        {
+          "id": "videoURL",
+          "type": "textarea",
+          "label": "video URL"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": {
+            "en": "Image"
+          }
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "Product SE 4 Video"
+      },
+      "category": {
+        "en": "Text"
+      }
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+  const lazyVideos = [].slice.call(document.querySelectorAll("video.product-se4video__video"));
+
+  if ("IntersectionObserver" in window) {
+    const lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(video) {
+        if (video.isIntersecting) {
+          for (var source in video.target.children) {
+            var videoSource = video.target.children[source];
+            if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
+              videoSource.src = videoSource.dataset.src;
+            }
+          }
+
+          video.target.load();
+          video.target.classList.remove("lazy");
+          lazyVideoObserver.unobserve(video.target);
+        }
+      });
+    });
+
+    lazyVideos.forEach(function(lazyVideo) {
+      lazyVideoObserver.observe(lazyVideo);
+    });
+  }
+{% endjavascript %}

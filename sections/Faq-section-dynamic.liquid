@@ -1,0 +1,152 @@
+<div class="faqSecMain">
+  <div class="page-width faqSecWrap">
+    <div class="Heads">
+      <div class="sub-heading caption_red">
+        <strong>{{ section.settings.sub_heading }}</strong>
+      </div>
+      <div class="head">
+        <h2>{{ section.settings.heading }}</h2>
+      </div>
+    </div>
+    <div class="accordionMain">
+      {% for block in section.blocks %}
+        <div class="faqAccordionWrapper">
+          <div class="accordion"><strong>{{ block.settings.heading-1 }}</strong></div>
+          <div class="panel">
+            <div class="panelInner">
+             {{ block.settings.desc-1 }}          
+            </div>
+          </div>
+        </div> 
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<style>
+
+/* FAQ */
+.accordion {
+color: #444;
+background: #fef6ee;
+cursor: pointer;
+padding: 12px 18px;
+width: 100%;
+border: none;
+text-align: left;
+outline: none;
+font-size: 18px;
+transition: 0.4s;
+}
+.accordion:after {
+content: '\002B';
+font-size: 22px;
+line-height: 30px;
+color: #ff5442;
+font-weight: bold;
+float: left;
+margin-right: 12px;
+pointer-events: none;
+display:none;
+}
+.actiVe:after {
+content: "\2212";
+}
+.panel {
+padding: 0 18px;
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.4s ease-out;
+margin-bottom: 0;
+}
+.panelInner{padding: 15px 0 15px 20px;margin: 0;}
+.panelInner p{
+  font-size: 16px;
+  color: #4e5651;
+  font-weight: 400;
+  margin-bottom: 7px;
+}
+  
+#accordion ul li:first-child div { 
+display:block;
+border-top:3px solid #FFCDCD;
+}
+.faqSecWrap{
+  margin: 4rem auto;
+}
+@media(min-width:769px){
+  .faqSecWrap{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  padding: 4rem;
+  }
+}
+</style> 
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("actiVe");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + 10 + "px";
+        } 
+      });
+    }
+</script>
+{% schema %}
+{
+  "name": "FAQ",
+  "settings": [
+    {
+      "id": "sub_heading",
+      "type": "html",
+      "label": "Sub Heading"
+    },
+    {
+      "id": "heading",
+      "type": "text",
+      "label": "Heading"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq",
+      "name": {
+        "en": "FAQ"
+      },
+      "settings": [
+        {
+          "id": "heading-1",
+          "type": "text",
+          "label": "Heading-1"
+        },
+        {
+          "id": "desc-1",
+          "type": "richtext",
+          "label": "Description-1"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Default FAQ",
+      "settings": {
+        "sub_heading": "Default Sub Heading",
+        "heading": "Default FAQ Heading"
+      },
+      "blocks": [
+        {
+          "type": "faq"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,326 @@
+{% assign product_handle = product.handle %}
+{% for block in section.blocks %}
+{% if product_handle == block.settings.featured_product %}
+
+<div class="proSec3 product-se-3" style="background:{{ section.settings.bd_color }}">
+<div class="page-width product-se3lashes101">
+<div class="product-lashes101main">
+
+  <div class="top">
+
+       <h2 class="h1">{{ block.settings.heading }}</h2>
+
+    <div class="sub_heading">
+       <strong>{{ block.settings.sub_heading }}</strong>
+    </div>
+    <div class="desc">
+       <p>{{ block.settings.desc }}</p>
+    </div>
+  </div>
+
+
+  <div class="middle">
+  	<div class="middle_heading">
+       <strong>{{ block.settings.middle_heading }}</strong>
+    </div>
+    <div class="middle_image">
+       <img src="{{ block.settings.middle_image | img_url: "" }}">
+    </div>
+  </div>
+
+
+    <div class="bottom">
+      <div class="msPortTabMain clear">
+    <ul id="msPortTab-nav" class="msPortTab">
+
+    <li><a href="#msPortTab1">
+    <strong>{{ block.settings.tab_btn1 }}</strong>
+    </a>
+    </li>
+
+    <li><a href="#msPortTab2">
+    <strong>{{ block.settings.tab_btn2 }}</strong>
+    </a>
+    </li>
+
+     <li><a href="#msPortTab3">
+    <strong>{{ block.settings.tab_btn3 }}</strong>
+    </a>
+    </li>
+    </ul>
+
+    <div id="msPortTab-content-main">
+
+    <div id="msPortTab1" class="msPortTab-content">
+      <strong>{{ block.settings.tab_heading1 }}</strong>
+      <p>{{ block.settings.tab_desc1 }}</p>
+    </div>
+    <div id="msPortTab2" class="msPortTab-content">
+     <strong>{{ block.settings.tab_heading2 }}</strong>
+      <p>{{ block.settings.tab_desc2 }}</p>
+    </div>
+    <div id="msPortTab3" class="msPortTab-content">
+     <strong>{{ block.settings.tab_heading3 }}</strong>
+      <p>{{ block.settings.tab_desc3 }}</p>
+    </div>
+    </div>
+    </div>
+
+
+  	</div>
+
+</div>
+</div>
+</div>
+{% endif %}
+{% endfor %}
+<style>
+  .product-se-3{
+    padding:5rem 2rem
+  }
+.product-se-3 .top {
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+  .product-se-3 .top .header h2 {
+    font-size: 44px;
+    line-height: 48px;
+    font-weight: 300;
+    text-shadow: none;
+    color: #4e5651;
+    margin-bottom: 15px;
+    text-transform: none;
+    letter-spacing: 0;
+}
+  .product-se-3 .top .sub_heading strong {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    color: #4e5651;
+    margin-bottom: 10px;
+}
+  .product-se-3 .top .desc {
+    font-size: 17px;
+    font-weight: 400;
+    color: #737373;
+    width: 90%;
+    margin: 0 auto;
+}
+  .product-se-3 .top .desc p {
+    color: #737373;
+}
+  .product-se-3 .middle {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+  .product-se-3 .middle .middle_heading strong {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    color: #4e5651;
+    margin-bottom: 10px;
+}
+  .product-se-3 .bottom {
+    width: 70%;
+    margin: 0 auto;
+}
+  .product-se-3 .bottom .msPortTab {
+    display: flex;
+    background: #fff;
+    justify-content: space-between;
+    border-radius: 7px;
+    padding:0px;
+}
+  .product-se-3 .bottom .msPortTab li.active {
+    border: 1px solid #ff5442;
+}
+.msPortTab a{
+  text-decoration: none;
+}
+.product-se-3 .bottom .msPortTab li {
+    width: 33.33%;
+    padding: 13px;
+    text-align: center;
+    border-radius: 7px;
+    color: #ff5442;
+    list-style:none;
+}
+.product-se-3 .bottom .msPortTab li strong {
+    color: #ff5442;
+}
+  .product-se-3 .msPortTab-content {
+    padding: 15px 35px;
+}
+.product-se-3 .msPortTab-content strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+  .middle_image img{
+    width:100%
+  }
+  @media(max-width:768px){
+    .product-se-3 .bottom,.product-se-3 .middle,.product-se-3 .top .desc {
+    width: 100%;
+    margin: 0 auto;
+    }
+    .product-se-3 .bottom .msPortTab li{
+      padding:4px;
+      font-size:12px;
+    }
+  }
+</style>
+{% schema %}
+{
+  "name": "Lash details",
+  "class": "lash-details",
+  "settings": [
+   {
+      "type": "color",
+      "id": "bd_color",
+      "label": "Section Background Color"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text_block",
+      "name": "product Name",
+      "settings": [
+        {
+          "type": "product",
+          "id": "featured_product",
+          "label": "Select a product to display the below content"
+        },
+        {
+          "type": "header",
+          "content": "Top Section"
+        },
+        {
+          "id": "heading",
+          "type": "text",
+          "label": "Heading"
+        },
+        {
+          "id": "sub_heading",
+          "type": "text",
+          "label": "Sub Heading"
+        },
+        {
+          "id": "desc",
+          "type": "html",
+          "label": "Description"
+        },
+        {
+          "type": "header",
+          "content": "Middle Section"
+        },
+        {
+          "id": "middle_heading",
+          "type": "text",
+          "label": "Heading"
+        },
+        {
+          "id": "middle_image",
+          "type": "image_picker",
+          "label": "Image"
+        },
+        {
+          "type": "header",
+          "content": "Bottom Section"
+        },
+        {
+          "id": "tab_btn1",
+          "type": "text",
+          "label": "Tab Button Heading 1"
+        },
+        {
+          "id": "tab_heading1",
+          "type": "text",
+          "label": "Heading 1"
+        },
+        {
+          "id": "tab_desc1",
+          "type": "html",
+          "label": "Tab Description 1"
+        },
+        {
+          "id": "tab_btn2",
+          "type": "text",
+          "label": "Tab Button Heading 2"
+        },
+        {
+          "id": "tab_heading2",
+          "type": "text",
+          "label": "Heading 2"
+        },
+        {
+          "id": "tab_desc2",
+          "type": "html",
+          "label": "Tab Description 2"
+        },
+        {
+          "id": "tab_btn3",
+          "type": "text",
+          "label": "Tab Button Heading 3"
+        },
+        {
+          "id": "tab_heading3",
+          "type": "text",
+          "label": "Heading 3"
+        },
+        {
+          "id": "tab_desc3",
+          "type": "html",
+          "label": "Tab Description 3"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "Lash Details"
+      }
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var tabNavItems = document.querySelectorAll('#msPortTab-nav li');
+    var tabContents = document.querySelectorAll('.msPortTab-content');
+
+    tabNavItems[0].classList.add('active');
+    tabContents.forEach(function(content, index) {
+        if (index !== 0) {
+            content.style.display = 'none';
+        }
+    });
+
+    // Click function
+    tabNavItems.forEach(function(tabNavItem) {
+        tabNavItem.addEventListener('click', function(event) {
+            event.preventDefault();
+            tabNavItems.forEach(function(item) {
+                item.classList.remove('active');
+            });
+            tabContents.forEach(function(content) {
+                content.style.display = 'none';
+            });
+            this.classList.add('active');
+            var activeTab = this.querySelector('a').getAttribute('href');
+            document.querySelector(activeTab).style.display = 'block';
+        });
+    });
+});
+
+</script>

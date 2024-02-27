@@ -1,0 +1,721 @@
+<script>jdgm = window.jdgm || {};jdgm.SHOP_DOMAIN = 'hello-skincare.myshopify.com';jdgm.PLATFORM = 'shopify';jdgm.PUBLIC_TOKEN = 'jTzJQNxGfQoodGw7hWuo6KFGKXY';</script>
+<script data-cfasync='false' type='text/javascript' async src='https://cdn.judge.me/widget_preloader.js'></script>
+<script data-cfasync='false' type='text/javascript' async src='https://cdn.judge.me/assets/installed.js'></script>
+  {{ 'testimonials.css' | asset_url | stylesheet_tag }}
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+<div class="mainSlider">
+  {% if section.blocks.size > 0 %}
+    <div class="quotes-wrapperySlider swiper mySwiper">
+        <div class="quotes-slider swiper-wrapper">
+          {% for block in section.blocks %}
+          <div class="swiper-slide">
+            <div class="itemWrap">
+              <div class="product_box">
+                {%- assign productz = all_products[block.settings.featured_product] -%}
+               <div class="productMeta">
+                  {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: false, product: productz %}
+                  <h2>{{ productz.title }}</h2>
+                  <div class="desk">    {{ productz.metafields.global.product-info }}</div>
+                </div>
+                <div class="itemWrap__img js">
+                  
+                 {%- liquid
+                    assign height = productz.featured_image-.width | divided_by: productz.featured_image.aspect_ratio | round
+                    assign sizes = '100vw'
+                    assign widths = '200,375'
+                -%}
+                {{
+                  productz.featured_image
+                  | image_url: width: 600
+                  | image_tag: loading: 'lazy', height: height, sizes: sizes, widths: widths
+                }}
+                </div>
+                <a href="{{ productz.url }}" class="btn button">Shop Now</a>
+              </div>          
+               <div class="quotes-slide swiper">
+                <div class="innrQuotes swiper-wrapper">
+                  
+                  {% if block.settings.quote != blank %}
+                    <div class="allQuotes swiper-slide">
+                      <div class="inner_div">
+                      <div class="starWrap">
+                      {% for i in (1..block.settings.rating_star) %}
+                        <svg id="color" class="icon" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m23.363 8.584-7.378-1.127-3.307-7.044c-.247-.526-1.11-.526-1.357 0l-3.306 7.044-7.378 1.127c-.606.093-.848.83-.423 1.265l5.36 5.494-1.267 7.767c-.101.617.558 1.08 1.103.777l6.59-3.642 6.59 3.643c.54.3 1.205-.154 1.103-.777l-1.267-7.767 5.36-5.494c.425-.436.182-1.173-.423-1.266z" fill="#ffc107"/></svg>
+                      {% endfor %}
+                      </div>
+                      {% if block.settings.quote != blank %}
+                        <div class="rte-setting rte">{{ block.settings.quote }}</div>
+                      {% endif %}
+                      <div class="authorBox">
+                        <div class="left">
+                          {% if block.settings.author != blank %}
+                            <span>{{ block.settings.author }}</span>
+                          {% endif %}
+                          {% if block.settings.author_place != blank %}
+                            <span>{{ block.settings.author_place }}</span>
+                          {% endif %}  
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  {% endif %}
+                  {% if block.settings.quote2 != blank %}
+                    <div class="allQuotes swiper-slide">
+                         <div class="inner_div">
+                      <div class="starWrap">
+                      {% for i in (1..block.settings.rating_star2) %}
+                        <svg id="color" class="icon" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m23.363 8.584-7.378-1.127-3.307-7.044c-.247-.526-1.11-.526-1.357 0l-3.306 7.044-7.378 1.127c-.606.093-.848.83-.423 1.265l5.36 5.494-1.267 7.767c-.101.617.558 1.08 1.103.777l6.59-3.642 6.59 3.643c.54.3 1.205-.154 1.103-.777l-1.267-7.767 5.36-5.494c.425-.436.182-1.173-.423-1.266z" fill="#ffc107"/></svg>
+                      {% endfor %}
+                      </div>
+                      {% if block.settings.quote2 != blank %}
+                        <div class="rte-setting rte">{{ block.settings.quote2 }}</div>
+                      {% endif %}
+                      <div class="authorBox">
+                        <div class="left">
+                          {% if block.settings.author2 != blank %}
+                            <span>{{ block.settings.author2 }}</span>
+                          {% endif %}
+                          {% if block.settings.author_place2 != blank %}
+                            <span>{{ block.settings.author_place2 }}</span>
+                          {% endif %}  
+                        </div>
+                      </div>    
+                    </div>  
+                    </div>  
+                  {% endif %}
+                  {% if block.settings.quote3 != blank %}
+                    <div class="allQuotes swiper-slide">
+                      <div class="inner_div">
+                      <div class="starWrap">
+                      {% for i in (1..block.settings.rating_star3) %}
+                        <svg id="color" class="icon" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m23.363 8.584-7.378-1.127-3.307-7.044c-.247-.526-1.11-.526-1.357 0l-3.306 7.044-7.378 1.127c-.606.093-.848.83-.423 1.265l5.36 5.494-1.267 7.767c-.101.617.558 1.08 1.103.777l6.59-3.642 6.59 3.643c.54.3 1.205-.154 1.103-.777l-1.267-7.767 5.36-5.494c.425-.436.182-1.173-.423-1.266z" fill="#ffc107"/></svg>
+                      {% endfor %}
+                      </div>
+                      {% if block.settings.quote3 != blank %}
+                        <div class="rte-setting rte">{{ block.settings.quote3 }}</div>
+                      {% endif %}
+                      <div class="authorBox">
+                        <div class="left">
+                          {% if block.settings.author3 != blank %}
+                            <span>{{ block.settings.author3 }}</span>
+                          {% endif %}
+                          {% if block.settings.author_place3 != blank %}
+                            <span>{{ block.settings.author_place3 }}</span>
+                          {% endif %}  
+                        </div>
+                      </div>                   
+                    </div> 
+                   </div>
+                  {% endif %}  
+                  
+                  {% if block.settings.quote4 != blank %}
+                    <div class="allQuotes swiper-slide">
+                        <div class="inner_div">
+                      <div class="starWrap">
+                      {% for i in (1..block.settings.rating_star4) %}
+                        <svg id="color" class="icon" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m23.363 8.584-7.378-1.127-3.307-7.044c-.247-.526-1.11-.526-1.357 0l-3.306 7.044-7.378 1.127c-.606.093-.848.83-.423 1.265l5.36 5.494-1.267 7.767c-.101.617.558 1.08 1.103.777l6.59-3.642 6.59 3.643c.54.3 1.205-.154 1.103-.777l-1.267-7.767 5.36-5.494c.425-.436.182-1.173-.423-1.266z" fill="#ffc107"/></svg>
+                      {% endfor %}
+                      </div>
+                      {% if block.settings.quote4 != blank %}
+                        <div class="rte-setting rte">{{ block.settings.quote4 }}</div>
+                      {% endif %}
+                      <div class="authorBox">
+                        <div class="left">
+                          {% if block.settings.author4 != blank %}
+                            <span>{{ block.settings.author4 }}</span>
+                          {% endif %}
+                          {% if block.settings.author_place4 != blank %}
+                            <span>{{ block.settings.author_place4 }}</span>
+                          {% endif %}  
+                        </div>
+                      </div>                   
+                    </div>  
+                   </div>
+                  {% endif %}  
+                  
+                  {% if block.settings.quote5 != blank %}
+                    <div class="allQuotes swiper-slide">
+                        <div class="inner_div">
+                      <div class="starWrap">
+                      {% for i in (1..block.settings.rating_star5) %}
+                        <svg id="color" class="icon" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m23.363 8.584-7.378-1.127-3.307-7.044c-.247-.526-1.11-.526-1.357 0l-3.306 7.044-7.378 1.127c-.606.093-.848.83-.423 1.265l5.36 5.494-1.267 7.767c-.101.617.558 1.08 1.103.777l6.59-3.642 6.59 3.643c.54.3 1.205-.154 1.103-.777l-1.267-7.767 5.36-5.494c.425-.436.182-1.173-.423-1.266z" fill="#ffc107"/></svg>
+                      {% endfor %}
+                      </div>
+                      {% if block.settings.quote5 != blank %}
+                        <div class="rte-setting rte">{{ block.settings.quote5 }}</div>
+                      {% endif %}
+                      <div class="authorBox">
+                        <div class="left">
+                          {% if block.settings.author5 != blank %}
+                            <span>{{ block.settings.author5 }}</span>
+                          {% endif %}
+                          {% if block.settings.author_place5 != blank %}
+                            <span>{{ block.settings.author_place5 }}</span>
+                          {% endif %}  
+                        </div>
+                      </div>
+                      </div>    
+                    </div>  
+                  {% endif %}   
+                  {% if block.settings.quote6 != blank %}
+                    <div class="allQuotes swiper-slide">
+                        <div class="inner_div">
+                      <div class="starWrap">
+                      {% for i in (1..block.settings.rating_star6) %}
+                        <svg id="color" class="icon" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m23.363 8.584-7.378-1.127-3.307-7.044c-.247-.526-1.11-.526-1.357 0l-3.306 7.044-7.378 1.127c-.606.093-.848.83-.423 1.265l5.36 5.494-1.267 7.767c-.101.617.558 1.08 1.103.777l6.59-3.642 6.59 3.643c.54.3 1.205-.154 1.103-.777l-1.267-7.767 5.36-5.494c.425-.436.182-1.173-.423-1.266z" fill="#ffc107"/></svg>
+                      {% endfor %}
+                      </div>
+                      {% if block.settings.quote6 != blank %}
+                        <div class="rte-setting rte">{{ block.settings.quote6 }}</div>
+                      {% endif %}
+                      <div class="authorBox">
+                        <div class="left">
+                          {% if block.settings.author6 != blank %}
+                            <span>{{ block.settings.author6 }}</span>
+                          {% endif %}
+                          {% if block.settings.author_place6 != blank %}
+                            <span>{{ block.settings.author_place6 }}</span>
+                          {% endif %}  
+                        </div>
+                      </div>                   
+                    </div>
+                    </div>
+                  {% endif %} 
+                  {% if block.settings.quote7 != blank %}
+                    <div class="allQuotes swiper-slide">
+                    
+                      <div class="inner_div">
+                      <div class="starWrap">
+                      {% for i in (1..block.settings.rating_star7) %}
+                        <svg id="color" class="icon" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m23.363 8.584-7.378-1.127-3.307-7.044c-.247-.526-1.11-.526-1.357 0l-3.306 7.044-7.378 1.127c-.606.093-.848.83-.423 1.265l5.36 5.494-1.267 7.767c-.101.617.558 1.08 1.103.777l6.59-3.642 6.59 3.643c.54.3 1.205-.154 1.103-.777l-1.267-7.767 5.36-5.494c.425-.436.182-1.173-.423-1.266z" fill="#ffc107"/></svg>
+                      {% endfor %}
+                      </div>
+                      {% if block.settings.quote7 != blank %}
+                        <div class="rte-setting rte">{{ block.settings.quote7 }}</div>
+                      {% endif %}
+                      <div class="authorBox">
+                        <div class="left">
+                          {% if block.settings.author7 != blank %}
+                            <span>{{ block.settings.author7 }}</span>
+                          {% endif %}
+                          {% if block.settings.author_place7 != blank %}
+                            <span>{{ block.settings.author_place7 }}</span>
+                          {% endif %}  
+                        </div>
+                      </div> 
+                      </div>
+                    </div>  
+                  {% endif %}  
+                  {% if block.settings.quote8 != blank %}
+                    <div class="allQuotes swiper-slide">
+                      <div class="inner_div">
+                      <div class="starWrap">
+                      {% for i in (1..block.settings.rating_star8) %}
+                        <svg id="color" class="icon" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m23.363 8.584-7.378-1.127-3.307-7.044c-.247-.526-1.11-.526-1.357 0l-3.306 7.044-7.378 1.127c-.606.093-.848.83-.423 1.265l5.36 5.494-1.267 7.767c-.101.617.558 1.08 1.103.777l6.59-3.642 6.59 3.643c.54.3 1.205-.154 1.103-.777l-1.267-7.767 5.36-5.494c.425-.436.182-1.173-.423-1.266z" fill="#ffc107"/></svg>
+                      {% endfor %}
+                      </div>
+                      {% if block.settings.quote8 != blank %}
+                        <div class="rte-setting rte">{{ block.settings.quote8 }}</div>
+                      {% endif %}
+                      <div class="authorBox">
+                        <div class="left">
+                          {% if block.settings.author8 != blank %}
+                            <span>{{ block.settings.author8 }}</span>
+                          {% endif %}
+                          {% if block.settings.author_place8 != blank %}
+                            <span>{{ block.settings.author_place8 }}</span>
+                          {% endif %}  
+                        </div>
+                      </div>                   
+                    </div>  
+                  </div>
+                  {% endif %}  
+                  {% if block.settings.quote9 != blank %}
+                    <div class="allQuotes swiper-slide">
+                      <div class="inner_div">
+                      <div class="starWrap">
+                      {% for i in (1..block.settings.rating_star9) %}
+                        <svg id="color" class="icon" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m23.363 8.584-7.378-1.127-3.307-7.044c-.247-.526-1.11-.526-1.357 0l-3.306 7.044-7.378 1.127c-.606.093-.848.83-.423 1.265l5.36 5.494-1.267 7.767c-.101.617.558 1.08 1.103.777l6.59-3.642 6.59 3.643c.54.3 1.205-.154 1.103-.777l-1.267-7.767 5.36-5.494c.425-.436.182-1.173-.423-1.266z" fill="#ffc107"/></svg>
+                      {% endfor %}
+                      </div>
+                      {% if block.settings.quote9 != blank %}
+                        <div class="rte-setting rte">{{ block.settings.quote9 }}</div>
+                      {% endif %}
+                      <div class="authorBox">
+                        <div class="left">
+                          {% if block.settings.author9 != blank %}
+                            <span>{{ block.settings.author9 }}</span>
+                          {% endif %}
+                          {% if block.settings.author_place9 != blank %}
+                            <span>{{ block.settings.author_place9 }}</span>
+                          {% endif %}  
+                        </div>
+                      </div>
+                        </div>
+                    </div>  
+                  {% endif %}  
+                  {% if block.settings.quote10 != blank %}
+                    <div class="allQuotes swiper-slide">
+                      <div class="inner_div">
+                      <div class="starWrap">
+                      {% for i in (1..block.settings.rating_star10) %}
+                        <svg id="color" class="icon" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m23.363 8.584-7.378-1.127-3.307-7.044c-.247-.526-1.11-.526-1.357 0l-3.306 7.044-7.378 1.127c-.606.093-.848.83-.423 1.265l5.36 5.494-1.267 7.767c-.101.617.558 1.08 1.103.777l6.59-3.642 6.59 3.643c.54.3 1.205-.154 1.103-.777l-1.267-7.767 5.36-5.494c.425-.436.182-1.173-.423-1.266z" fill="#ffc107"/></svg>
+                      {% endfor %}
+                      </div>
+                      {% if block.settings.quote10 != blank %}
+                        <div class="rte-setting rte">{{ block.settings.quote10 }}</div>
+                      {% endif %}
+                      <div class="authorBox">
+                        <div class="left">
+                          {% if block.settings.author10 != blank %}
+                            <span>{{ block.settings.author10 }}</span>
+                          {% endif %}
+                          {% if block.settings.author_place10 != blank %}
+                            <span>{{ block.settings.author_place10 }}</span>
+                          {% endif %}  
+                        </div>
+                      </div>                   
+                    </div> 
+                   </div>      
+                  {% endif %}                   
+                </div>
+                   <div class="nav_dots">    
+                     <div class="swiper-pagination owl-dots">.</div>
+                    <div class="owl-nav">  
+                    <div class="swiper-button-next owl-next"><img src="https://cdn.shopify.com/s/files/1/0570/4777/7459/files/next_1.svg?v=1621333268"></div>
+                    <div class="swiper-button-prev owl-prev"><img src="https://cdn.shopify.com/s/files/1/0570/4777/7459/files/left-arrow_1.svg?v=1621333268"></div>
+                    </div>
+                   </div>      
+               </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+    </div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": {
+    "en": "Testimonials"
+  },
+  "class": "index-section-6",
+  "max_blocks": 9,
+  "settings": [
+
+  ],
+  "blocks": [
+    {
+      "type": "quote",
+      "name": {
+        "en": "Testimonial"
+      },
+      "settings": [
+        {
+          "type": "product",
+          "id": "featured_product",
+          "label": "Choose Product"
+        },
+        {
+          "type": "header",
+          "content": {
+            "en": "Review 1"
+          }
+        },
+        {
+          "type": "richtext",
+          "id": "quote",
+          "label": {
+            "en": "Text"
+          }
+        },
+        {
+          "type": "range",
+          "id": "rating_star",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "label": "Add Rating Star",
+          "default": 5
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": {
+            "en": "Author"
+          }
+        },
+        {
+          "id": "author_place",
+          "type": "html",
+          "label": "Author Place"
+        },
+        {
+          "type": "header",
+          "content": {
+            "en": "Review 2"
+          }
+        },
+        {
+          "type": "richtext",
+          "id": "quote2",
+          "label": {
+            "en": "Text"
+          }
+        },
+        {
+          "type": "range",
+          "id": "rating_star2",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "label": "Add Rating Star",
+          "default": 5
+        },
+        {
+          "type": "text",
+          "id": "author2",
+          "label": {
+            "en": "Author"
+          }
+        },
+        {
+          "id": "author_place2",
+          "type": "html",
+          "label": "Author Place"
+        },
+        {
+          "type": "header",
+          "content": {
+            "en": "Review 3"
+          }
+        },
+        {
+          "type": "richtext",
+          "id": "quote3",
+          "label": {
+            "en": "Text"
+          }
+        },
+        {
+          "type": "range",
+          "id": "rating_star3",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "label": "Add Rating Star",
+          "default": 5
+        },
+        {
+          "type": "text",
+          "id": "author3",
+          "label": {
+            "en": "Author"
+          }
+        },
+        {
+          "id": "author_place3",
+          "type": "html",
+          "label": "Author Place"
+        },
+        {
+          "type": "header",
+          "content": {
+            "en": "Review 4"
+          }
+        },
+        {
+          "type": "richtext",
+          "id": "quote4",
+          "label": {
+            "en": "Text"
+          }
+        },
+        {
+          "type": "range",
+          "id": "rating_star4",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "label": "Add Rating Star",
+          "default": 5
+        },
+        {
+          "type": "text",
+          "id": "author4",
+          "label": {
+            "en": "Author"
+          }
+        },
+        {
+          "id": "author_place4",
+          "type": "html",
+          "label": "Author Place"
+        },
+        {
+          "type": "header",
+          "content": {
+            "en": "Review 5"
+          }
+        },
+        {
+          "type": "richtext",
+          "id": "quote5",
+          "label": {
+            "en": "Text"
+          }
+        },
+        {
+          "type": "range",
+          "id": "rating_star5",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "label": "Add Rating Star",
+          "default": 5
+        },
+        {
+          "type": "text",
+          "id": "author5",
+          "label": {
+            "en": "Author"
+          }
+        },
+        {
+          "id": "author_place5",
+          "type": "html",
+          "label": "Author Place"
+        },
+        {
+          "type": "header",
+          "content": {
+            "en": "Review 6"
+          }
+        },
+        {
+          "type": "richtext",
+          "id": "quote6",
+          "label": {
+            "en": "Text"
+          }
+        },
+        {
+          "type": "range",
+          "id": "rating_star6",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "label": "Add Rating Star",
+          "default": 5
+        },
+        {
+          "type": "text",
+          "id": "author6",
+          "label": {
+            "en": "Author"
+          }
+        },
+        {
+          "id": "author_place6",
+          "type": "html",
+          "label": "Author Place"
+        },
+        {
+          "type": "header",
+          "content": {
+            "en": "Review 7"
+          }
+        },
+        {
+          "type": "richtext",
+          "id": "quote7",
+          "label": {
+            "en": "Text"
+          }
+        },
+        {
+          "type": "range",
+          "id": "rating_star7",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "label": "Add Rating Star",
+          "default": 5
+        },
+        {
+          "type": "text",
+          "id": "author7",
+          "label": {
+            "en": "Author"
+          }
+        },
+        {
+          "id": "author_place7",
+          "type": "html",
+          "label": "Author Place"
+        },
+        {
+          "type": "header",
+          "content": {
+            "en": "Review 8"
+          }
+        },
+        {
+          "type": "richtext",
+          "id": "quote8",
+          "label": {
+            "en": "Text"
+          }
+        },
+        {
+          "type": "range",
+          "id": "rating_star8",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "label": "Add Rating Star",
+          "default": 5
+        },
+        {
+          "type": "text",
+          "id": "author8",
+          "label": {
+            "en": "Author"
+          }
+        },
+        {
+          "id": "author_place8",
+          "type": "html",
+          "label": "Author Place"
+        },
+        {
+          "type": "header",
+          "content": {
+            "en": "Review 9"
+          }
+        },
+        {
+          "type": "richtext",
+          "id": "quote9",
+          "label": {
+            "en": "Text"
+          }
+        },
+        {
+          "type": "range",
+          "id": "rating_star9",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "label": "Add Rating Star",
+          "default": 5
+        },
+        {
+          "type": "text",
+          "id": "author9",
+          "label": {
+            "en": "Author"
+          }
+        },
+        {
+          "id": "author_place9",
+          "type": "html",
+          "label": "Author Place"
+        },
+        {
+          "type": "header",
+          "content": {
+            "en": "Review 10"
+          }
+        },
+        {
+          "type": "richtext",
+          "id": "quote10",
+          "label": {
+            "en": "Text"
+          }
+        },
+        {
+          "type": "range",
+          "id": "rating_star10",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "label": "Add Rating Star",
+          "default": 5
+        },
+        {
+          "type": "text",
+          "id": "author10",
+          "label": {
+            "en": "Author"
+          }
+        },
+        {
+          "id": "author_place10",
+          "type": "html",
+          "label": "Author Place"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "Testimonials"
+      },
+      "category": {
+        "en": "Home"
+      },
+      "blocks": [
+        {
+          "type": "quote"
+        },
+        {
+          "type": "quote"
+        },
+        {
+          "type": "quote"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      loop: true,
+      breakpoints: {
+        "@0.00": {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        "@0.75": {
+          slidesPerView: 1.5,
+          spaceBetween: 0,
+        }
+      },
+    });
+        var swiper = new Swiper(".quotes-slide", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      }
+    });
+  </script>
