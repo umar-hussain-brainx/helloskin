@@ -40,16 +40,25 @@
 <div class="product_top_cta page-width">
   <div class="image_area">
     <div class="product__title mobile_title">
-
+      {% if section.settings.heading !=blank %}
         <h1>{{section.settings.heading}}</h1>
+        {% endif %}
+        {% if section.settings.text !=blank %}
         <p class="sub_title">{{section.settings.text}}</p>
+        {% endif %}
       </div>
-    <img src="https://d9hhrg4mnvzow.cloudfront.net/lp.hoox.co/clearstem-skincare-landing-page-1-12-01-24-hoox/e3f33cfe-hero_10eq0dm000000000000000.jpg"/>
+    {% if section.settings.image_banner !=blank %}
+    <img src="{{ secion.settings.image_banner | img_url:"master" }}" loading="lazy"/>
+    {% endif %}
     </div>
     <div class="product__info-wrapper product__info-container">
       <div class="product__title">
-      <h1>{{section.settings.heading}}</h1>
-      <p class="sub_title">{{section.settings.text}}</p>
+     {% if section.settings.heading !=blank %}
+       <h1>{{section.settings.heading}}</h1>
+     {% endif %}
+     {% if section.settings.text !=blank %}
+     <p class="sub_title">{{section.settings.text}}</p>
+     {% endif %}
     </div>
      
     <div class="benefits_list">
@@ -64,7 +73,7 @@
     <div class="icons_">
       {% for block in section.blocks %}
       {% if block.type =="image" %}
-      <img src="{{block.settings.icon | img_url:"master"}}"/>
+      <img src="{{block.settings.icon | img_url:"master"}}" loading="lazy"/>
       {% endif %}
       {% endfor %}
     </div>
@@ -79,6 +88,11 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+  {
+    "type": "image_picker",
+    "id": "image_banner",
+    "label": "Banner Image"
+  },
   {
     "type": "text",
     "id": "heading",
