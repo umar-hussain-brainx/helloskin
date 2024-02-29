@@ -1,0 +1,150 @@
+{{ 'section-main-product.css' | asset_url | stylesheet_tag }}
+<style>
+.product_top_cta {
+  margin: 1.5rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:5%;
+}
+.product_top_cta li{
+  list-style: none;
+}
+.product_top_cta .btn{
+  margin:20px 0;
+}
+.image_area img{
+  width: 100%;
+}
+.icons_{
+  display: flex;
+  gap: 20px;
+}
+.product_top_cta .benefits_list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media(max-width:750px){
+  .product_top_cta .benefits_list{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+  .product_top_cta {
+    margin: 1.5rem auto;
+    display: flex;
+    flex-direction: column;
+    gap:5%;
+  }
+}
+
+</style>
+<div class="product_top_cta page-width">
+  <div class="image_area">
+    <div class="product__title mobile_title">
+      {% if section.settings.heading !=blank %}
+        <h1>{{section.settings.heading}}</h1>
+        {% endif %}
+        {% if section.settings.text !=blank %}
+        <p class="sub_title">{{section.settings.text}}</p>
+        {% endif %}
+      </div>
+    {% if section.settings.image_banner !=blank %}
+    <img src="{{ secion.settings.image_banner | img_url:"master" }}" loading="lazy"/>
+    {% endif %}
+    </div>
+    <div class="product__info-wrapper product__info-container">
+      <div class="product__title">
+     {% if section.settings.heading !=blank %}
+       <h1>{{section.settings.heading}}</h1>
+     {% endif %}
+     {% if section.settings.text !=blank %}
+     <p class="sub_title">{{section.settings.text}}</p>
+     {% endif %}
+    </div>
+     
+    <div class="benefits_list">
+      {% for block in section.blocks %}
+      {% if block.type =="text" %}
+      <li> {{ block.settings.text }}</li>
+      {% endif %}
+      {% endfor %}
+    </div>
+
+    <a href="{{section.settings.btn_link}}" class="btn button">{{section.settings.btn_text}}</a>
+    <div class="icons_">
+      {% for block in section.blocks %}
+      {% if block.type =="image" %}
+      <img src="{{block.settings.icon | img_url:"master"}}" loading="lazy"/>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Product Top CTA",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+  {
+    "type": "image_picker",
+    "id": "image_banner",
+    "label": "Banner Image"
+  },
+  {
+    "type": "text",
+    "id": "heading",
+    "label": "Heading"
+  },
+  {
+    "type": "text",
+    "id": "text",
+    "label": "Text"
+  },
+  {
+    "type": "text",
+    "id": "btn_text",
+    "label": "button Text"
+  },
+  {
+    "type": "url",
+    "id": "btn_link",
+    "label": "Link"
+  }
+
+  ],
+  "blocks": [
+  {
+    "type": "image",
+    "name": "icons",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "icon",
+        "label": "icon"
+      }
+    ]
+  },
+  {
+    "type": "text",
+    "name": "list",
+    "settings": [
+      {
+        "type": "inline_richtext",
+        "id": "text",
+        "default": "Text block",
+        "label": "Text "
+      }
+    ]
+  }
+  ],
+  "presets": [
+    {
+      "name": "Product Top CTA"
+ 
+    }
+  ]
+}
+{% endschema %}
