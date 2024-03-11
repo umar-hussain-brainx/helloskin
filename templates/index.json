@@ -1,60 +1,5 @@
 {
   "sections": {
-    "product_top_cta_section_RJfX7R": {
-      "type": "product-top-cta-section",
-      "blocks": {
-        "image_gJiJrw": {
-          "type": "image",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/1c302435-hero1_102s02s000000000000000.png"
-          }
-        },
-        "image_NizVyM": {
-          "type": "image",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/029e6893-hero2_102s02s000000000000000.png"
-          }
-        },
-        "text_KGWbxD": {
-          "type": "text",
-          "settings": {
-            "text": "✔️ Anti-acne and anti-aging "
-          }
-        },
-        "text_4RXhyH": {
-          "type": "text",
-          "settings": {
-            "text": "✔️ Results in as fast as 7 days"
-          }
-        },
-        "text_F8NQTF": {
-          "type": "text",
-          "settings": {
-            "text": "✔️ Non-toxic and drug-free"
-          }
-        },
-        "text_ndAJEd": {
-          "type": "text",
-          "settings": {
-            "text": "✔️ Glowing, more youthful skin"
-          }
-        }
-      },
-      "block_order": [
-        "image_gJiJrw",
-        "image_NizVyM",
-        "text_KGWbxD",
-        "text_4RXhyH",
-        "text_F8NQTF",
-        "text_ndAJEd"
-      ],
-      "settings": {
-        "heading": "Get Your Glow On",
-        "text": "C-JUVENATE Let your confidence shine with this power-packed Vitamin C and Ferulic Acid Super Serum.",
-        "btn_text": "CLEAR MY COMPLEXION",
-        "btn_link": ""
-      }
-    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -84,9 +29,11 @@
           "settings": {
             "button_label_1": "Shop Now",
             "button_link_1": "shopify:\/\/products\/lash-conditioner",
+            "button_link_1_new": false,
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
+            "button_link_2_new": false,
             "button_style_secondary_2": false
           }
         }
@@ -98,7 +45,8 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/5-CalliePhelps_HelloSkincare_r1_0026.jpg",
+        "image": "shopify:\/\/shop_images\/5-CalliePhelps_HelloSkincare_r1_0026.webp",
+        "mobile_image": "shopify:\/\/shop_images\/5-CalliePhelps_HelloSkincare_r1_0026_1.png",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-left",
@@ -610,7 +558,6 @@
     }
   },
   "order": [
-    "product_top_cta_section_RJfX7R",
     "image_banner",
     "3f7abe81-9add-49e7-ab58-6ae067ef7ff5",
     "ea6f35a6-9164-4a3f-9305-80c2664433ce",

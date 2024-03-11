@@ -14,20 +14,8 @@
 .product__media-wrapper {
   padding-left: 0;
 }
-.mobile_title{
-  display:block;
-  padding: 20px 0 0;
-}
-.product__info-container  .product__title, .product__info-container .jdgm-widget{
-  display: none !important;
- }
+
 @media screen and (min-width: 750px) {
-  .mobile_title{
-    display:none;
-  }
-  .product__info-container  .product__title ,.product__info-container  .jdgm-widget{
-    display: block !important;
-  }
   .product__column-sticky {
     display: block;
     position: sticky;
@@ -476,7 +464,7 @@ a.product__text {
 }
 
 .product-form__buttons {
-  max-width: 100%;
+  max-width: 44rem;
 }
 
 .product--no-media .product__info-container > modal-opener {
@@ -498,13 +486,6 @@ a.product__text {
 }
 
 @media screen and (max-width: 749px) {
-  .page-width {
-    padding: 0 2em !important;
-  }
-  .benefits span {
-    padding: 6px 8px 4px !important;
-    margin: 0px 3px !important;
-  }
   .product__media-list {
     margin-left: -2.5rem;
     margin-bottom: 3rem;
@@ -1637,145 +1618,4 @@ a.product__text {
 .rc_widget__option__plans__dropdown.rc-selling-plans__dropdown{
   display: block;
   padding: 7px;
-}
-
-/* custom css  */
-.benefits_list li{
- color:#000;
-}
-.rc-template__button-group .rc-radio .rc-radio__label {
-  position: relative;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-}  
-.benefits{
-  margin:25px 0 20px; 
-  text-transform: capitalize;
-  color: #000;
-}
-.benefits span{
-  background-color: #ebf6d0;
-  padding: 6px 8px 4px;
-  border-radius: 6px;
-  margin:0 5px;
-  display: inline-block;
-  font-size: medium;
-  font-weight: 300;
-  line-height: normal;
-
-}
-.benefits span:nth-child(2){
-  background:rgba(253,241,208,1);
-}
-.benefits span:nth-child(3){
-  background: #d3f1fb;
-}
-
-.rc-template__button-group .rc-radio-group__options{
-  flex-direction: column;
-}
-.rc-template__button-group .rc-radio {
-  border-radius: 8px !important;
-  margin: 5px 0px;
-}
-.rc-widget .rc-option--active{
-  background: #F5F1EC !important;
-  border: 1px solid #1A1A1A !important;
-}
-.rc-template__button-group .rc-radio .rc-radio__label{
-  position: relative;
-}
-.rc-radio-group__options [type="radio"]:checked + .rc_widget__option__label:before, [type="radio"] + .rc_widget__option__label:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 4px;
-  width: 18px;
-  height: 18px;
-  border: 1px solid #343147;
-  border-radius: 100%;
-  background: #fff;
-}
-.rc-radio-group__options [type="radio"]:checked + .rc_widget__option__label:after {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-.rc-radio-group__options [type="radio"]:checked + .rc_widget__option__label:after {
-  content: '';
-  width: 12px;
-  height: 12px;
-  background: #343147;
-  position: absolute;
-  top: 7px;
-  left: 3px;
-  border-radius: 100%;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-.rc-template__button-group .rc-radio .rc-radio__label {
-  margin-left: 0;
-  line-height: 1;
-  width: 100%;
-  padding: 0 0 0 25px;
-}
-.rc-template__button-group .rc-radio .rc-radio__label {
-  display: flex;
-  align-items: center
-}
-.rc-template__button-group .rc-radio .rc-option__price {
-  display: block;
-  font-weight: bold;
-  font-size: 20px;
-  margin-top: 8px;
-  margin: 3px 0px 3px auto;
-  text-align: right;
-}
-.rc-option__discount{
-  background-color: #f4b192;
-  padding: 4px 8px 2px;
-  border-radius: 6px;
-  margin: 0 5px;
-  display: inline-block;
-  font-size: medium;
-  font-weight: 300;
-}
-.rc-option__discount:before{
-  content:"SAVE ";
-}
-.rc-option__text[data-label-text-subsave] {
-  font-weight:bold;
-}
-.rc-template__button-group{
-  display: flex;
-  flex-direction: column-reverse;
-}
-.rc_widget__option__plans__dropdown.rc-selling-plans__dropdown{
-  border-radius:8px;
-}
-.rc-template__button-group .rc-radio-group__options+.rc-selling-plans{
-  margin-top:0px;
-}
-.rc-selling-plans{
-  display:flex;
-  align-items: center;
-  gap:10px;
-}
-@media(min-width:1050px){
-  .benefits h3{
-    display: inline-block;
-    margin:0px;
-  }
-}
-@media (max-width:1050px) and (min-width:750px){
-.product__info-wrapper {
-  padding: 0 0 0 2rem;
-}
-.page-width {
-    padding: 0 2rem;
-}
-.rc-template__button-group *{
-  font-size:12px;
-}
 }
