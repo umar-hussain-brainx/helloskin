@@ -15,8 +15,8 @@
             <a href="{{ block.settings.link }}" class="logo-bar__link">
           {% endif %}
           {% if block.settings.image != blank %}
-            {{ block.settings.image | image_url: width: 320, height: 320 | img_tag: block.settings.image.alt, 'logo-bar__image' }}
-
+        
+         <img class="logo-bar__image" loading="lazy" src="{{block.settings.image | img_url: "100x"}}" max-width="100px" max-height="100px"/>
           {% endif %}
           {% if block.settings.link != blank %}
             </a>

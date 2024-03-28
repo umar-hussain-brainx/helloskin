@@ -29,9 +29,11 @@
           "settings": {
             "button_label_1": "Shop Now",
             "button_link_1": "shopify:\/\/products\/lash-conditioner",
+            "button_link_1_new": false,
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
+            "button_link_2_new": false,
             "button_style_secondary_2": false
           }
         }
@@ -43,7 +45,8 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/5-CalliePhelps_HelloSkincare_r1_0026.jpg",
+        "image": "shopify:\/\/shop_images\/5-CalliePhelps_HelloSkincare_r1_0026.webp",
+        "mobile_image": "shopify:\/\/shop_images\/5-CalliePhelps_HelloSkincare_r1_0026_1.png",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-left",
