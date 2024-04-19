@@ -6,7 +6,7 @@
         "736dc0ba-b66e-43eb-8e95-99ce184cc7e2": {
           "type": "subheading",
           "settings": {
-            "subheading": "<strong>LASH THERAPY<\/strong>",
+            "subheading": "<strong>LASH THERAPY</strong>",
             "heading_size": "h1"
           }
         },
@@ -28,7 +28,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop Now",
-            "button_link_1": "shopify:\/\/products\/lash-conditioner",
+            "button_link_1": "shopify://products/lash-conditioner",
             "button_link_1_new": false,
             "button_style_secondary_1": true,
             "button_label_2": "",
@@ -45,8 +45,8 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/5-CalliePhelps_HelloSkincare_r1_0026.webp",
-        "mobile_image": "shopify:\/\/shop_images\/5-CalliePhelps_HelloSkincare_r1_0026_1.png",
+        "image": "shopify://shop_images/5-CalliePhelps_HelloSkincare_r1_0026.jpg",
+        "mobile_image": "shopify://shop_images/5-CalliePhelps_HelloSkincare_r1_0026_1.png",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-left",
@@ -65,21 +65,21 @@
         "template--16989491429625__3f7abe81-9add-49e7-ab58-6ae067ef7ff5-logo_image-1": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/ELLE_Magazine_Logo.svg_f251ded5-783e-492a-b309-59239beae521.png",
+            "image": "shopify://shop_images/ELLE_Magazine_Logo.svg_f251ded5-783e-492a-b309-59239beae521.png",
             "link": ""
           }
         },
         "template--16989491429625__3f7abe81-9add-49e7-ab58-6ae067ef7ff5-logo_image-2": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/allure-logo-png.png",
+            "image": "shopify://shop_images/allure-logo-png.png",
             "link": ""
           }
         },
         "template--16989491429625__3f7abe81-9add-49e7-ab58-6ae067ef7ff5-logo_image-3": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/mH5oz2Mh6KZc6CWjvAsfhd-1200-80.jpg",
+            "image": "shopify://shop_images/mH5oz2Mh6KZc6CWjvAsfhd-1200-80.jpg",
             "link": ""
           }
         }
@@ -121,7 +121,7 @@
         "template--16989491429625__ea6f35a6-9164-4a3f-9305-80c2664433ce-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>It’s time for beauty solutions that feel good, work great, and are better for you.<\/p><p>Hello is a fresh generation of perfectly formulated beauty products that use only the best ingredients from both nature and science. Our incredibly effective and easy-to-use solutions give you an at-home alternative to costly and time-consuming beauty routines. It’s beauty, done better.<\/p>",
+            "text": "<p>It’s time for beauty solutions that feel good, work great, and are better for you.</p><p>Hello is a fresh generation of perfectly formulated beauty products that use only the best ingredients from both nature and science. Our incredibly effective and easy-to-use solutions give you an at-home alternative to costly and time-consuming beauty routines. It’s beauty, done better.</p>",
             "text_style": "body"
           }
         },
@@ -129,7 +129,7 @@
           "type": "button",
           "settings": {
             "button_label": "READ MORE",
-            "button_link": "",
+            "button_link": "https://helloskincare.com/pages/our-ethos-1",
             "button_style_secondary": false
           }
         }
@@ -142,7 +142,7 @@
         "template--16989491429625__ea6f35a6-9164-4a3f-9305-80c2664433ce-button-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/eathos_img_e983247b-1979-4936-aa1f-ce7f93d8cfe5.png",
+        "image": "shopify://shop_images/eathos_img_e983247b-1979-4936-aa1f-ce7f93d8cfe5.png",
         "bg_color": "#f3f3f3",
         "radius": 0,
         "height": "adapt",
@@ -186,7 +186,7 @@
         "template--16989491429625__ca75a139-7f6a-4768-8c09-ac46b8ca0431-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Step up your selfie game in just 60 days with longer, stronger, and healthier-looking lashes using Hello Lash Therapy.<\/p>",
+            "text": "<p>Step up your selfie game in just 60 days with longer, stronger, and healthier-looking lashes using Hello Lash Therapy.</p>",
             "text_style": "body"
           }
         },
@@ -194,7 +194,7 @@
           "type": "button",
           "settings": {
             "button_label": "SHOP NOW",
-            "button_link": "shopify:\/\/products\/lash-conditioner",
+            "button_link": "shopify://products/lash-conditioner",
             "button_style_secondary": false
           }
         }
@@ -207,7 +207,7 @@
         "template--16989491429625__ca75a139-7f6a-4768-8c09-ac46b8ca0431-button-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/3b-CalliePhelps_HelloSkincare_r2_6339__1_814f203f-155c-45ad-8402-267b047ee507.jpg",
+        "image": "shopify://shop_images/3b-CalliePhelps_HelloSkincare_r2_6339__1_814f203f-155c-45ad-8402-267b047ee507.jpg",
         "bg_color": "",
         "radius": 50,
         "height": "adapt",
@@ -251,7 +251,7 @@
         "template--16989491429625__59314ed1-7cb3-4fb8-a69d-5c21be0e5332-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Stay a step ahead of the signs of aging with our Bakuchiol-infused retinol alternative Super Serum.<\/p>",
+            "text": "<p>Stay a step ahead of the signs of aging with our Bakuchiol-infused retinol alternative Super Serum.</p>",
             "text_style": "body"
           }
         },
@@ -259,7 +259,7 @@
           "type": "button",
           "settings": {
             "button_label": "SHOP NOW",
-            "button_link": "shopify:\/\/products\/time-machine",
+            "button_link": "shopify://products/time-machine",
             "button_style_secondary": false
           }
         }
@@ -272,7 +272,7 @@
         "template--16989491429625__59314ed1-7cb3-4fb8-a69d-5c21be0e5332-button-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/8_3x_c5160b76-ed45-40c2-a294-a00fb5734b2c.png",
+        "image": "shopify://shop_images/time-1.jpg",
         "bg_color": "",
         "radius": 50,
         "height": "adapt",
@@ -316,7 +316,7 @@
         "template--16989491429625__f757b566-1499-4eae-8a75-d6ba0f97ac20-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Let your confidence shine with this power-packed Vitamin C and Ferulic Acid Super Serum.<\/p>",
+            "text": "<p>Let your confidence shine with this power-packed Vitamin C and Ferulic Acid Super Serum.</p>",
             "text_style": "body"
           }
         },
@@ -324,7 +324,7 @@
           "type": "button",
           "settings": {
             "button_label": "SHOP NOW",
-            "button_link": "shopify:\/\/products\/c-juvenate",
+            "button_link": "shopify://products/c-juvenate",
             "button_style_secondary": false
           }
         }
@@ -337,7 +337,7 @@
         "template--16989491429625__f757b566-1499-4eae-8a75-d6ba0f97ac20-button-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/86-Callie_Phelps_r1_9537_aed2f343-bf05-4ba9-81bf-3298467ea3ca.jpg",
+        "image": "shopify://shop_images/86-Callie_Phelps_r1_9537_aed2f343-bf05-4ba9-81bf-3298467ea3ca.jpg",
         "bg_color": "",
         "radius": 50,
         "height": "adapt",
@@ -360,15 +360,15 @@
           "type": "quote",
           "settings": {
             "featured_product": "lash-conditioner",
-            "quote": "<p><em>FINALLY! A product that DOES what they SAY it will do!<\/em><\/p><p>\"I have tried vitamins & other lash growth serums with NO result. I stopped wearing makeup since I didn't want to draw extra attention to the few lashes I had left & the bald spots. I started using Lash Therapy regularly & now I don't have ANY bald spots & they are long enough to use an eyelash curler & mascara again!!\"<\/p>",
+            "quote": "<p><em>FINALLY! A product that DOES what they SAY it will do!</em></p><p>\"I have tried vitamins & other lash growth serums with NO result. I stopped wearing makeup since I didn't want to draw extra attention to the few lashes I had left & the bald spots. I started using Lash Therapy regularly & now I don't have ANY bald spots & they are long enough to use an eyelash curler & mascara again!!\"</p>",
             "rating_star": 5,
             "author": "Judy H.",
             "author_place": "",
-            "quote2": "<p><em>Incredible!<\/em><\/p><p>\"I was getting lash extensions every 3 weeks for 6 months. I loved the fullness and convenience, but as promised (warned) by others, they destroyed my natural lashes. When I decided to take a hiatus from extensions, I had less than 20 natural (upper) lashes left on each eye. My confidence went from high to low in an instant. Lash Therapy has been a Godsend. My natural lashes are MUCH longer than they have ever been and the fullness is returning - and all much more quickly than I’d expected to see results!\"<\/p>",
+            "quote2": "<p><em>Incredible!</em></p><p>\"I was getting lash extensions every 3 weeks for 6 months. I loved the fullness and convenience, but as promised (warned) by others, they destroyed my natural lashes. When I decided to take a hiatus from extensions, I had less than 20 natural (upper) lashes left on each eye. My confidence went from high to low in an instant. Lash Therapy has been a Godsend. My natural lashes are MUCH longer than they have ever been and the fullness is returning - and all much more quickly than I’d expected to see results!\"</p>",
             "rating_star2": 5,
             "author2": "Megan C.",
             "author_place2": "",
-            "quote3": "<p><em>BEST Lash Serum Ever!<\/em><\/p><p>\"I am still floored at how beautiful and long my lashes are! Six month later and I am still completely satisfied! The ease of the application along with no harmful ingredients for my eyes, you can’t ask for a better product! 5 stars all the way!\"<\/p>",
+            "quote3": "<p><em>BEST Lash Serum Ever!</em></p><p>\"I am still floored at how beautiful and long my lashes are! Six month later and I am still completely satisfied! The ease of the application along with no harmful ingredients for my eyes, you can’t ask for a better product! 5 stars all the way!\"</p>",
             "rating_star3": 5,
             "author3": "Debbie L.",
             "author_place3": "",
@@ -406,15 +406,15 @@
           "type": "quote",
           "settings": {
             "featured_product": "time-machine",
-            "quote": "<p><em>I freaking love this serum<\/em>.<\/p><p>\"My skin has been loving it and my acne has been at its best. I feel like the breakouts don't stick around quite as long. Basically, I'm seeing fewer breakouts with minimal discoloration and scarring when I do have a breakout. It feels great, not heavy on the skin like some other serums\/oils I've tried.\"<\/p>",
+            "quote": "<p><em>I freaking love this serum</em>.</p><p>\"My skin has been loving it and my acne has been at its best. I feel like the breakouts don't stick around quite as long. Basically, I'm seeing fewer breakouts with minimal discoloration and scarring when I do have a breakout. It feels great, not heavy on the skin like some other serums/oils I've tried.\"</p>",
             "rating_star": 5,
             "author": "Jessica Wilson",
             "author_place": "",
-            "quote2": "<p><em>New skincare staples!<\/em><br\/>\"Using Time Machine in tandem with C-Juvenate has been an absolutely game changer for my skin. I didn't know I could even see such a big difference. I have noticed fewer fine lines, greater moisture retention even in the dry Colorado climate and a more supple bounce to my skin's texture.\"<\/p>",
+            "quote2": "<p><em>New skincare staples!</em><br/>\"Using Time Machine in tandem with C-Juvenate has been an absolutely game changer for my skin. I didn't know I could even see such a big difference. I have noticed fewer fine lines, greater moisture retention even in the dry Colorado climate and a more supple bounce to my skin's texture.\"</p>",
             "rating_star2": 5,
             "author2": "Callie Phelps",
             "author_place2": "",
-            "quote3": "<p><em>Love, love, love this!<\/em><\/p><p>\"A must-have powerhouse anti-aging serum that can easily be incorporated into any skincare routine! As a retinol fan, I was slightly skeptical of Bakuchiol as plant-based alternative. But I’m now completely obsessed - I found it to be less irritating while still giving my skin visible results.\"<\/p>",
+            "quote3": "<p><em>Love, love, love this!</em></p><p>\"A must-have powerhouse anti-aging serum that can easily be incorporated into any skincare routine! As a retinol fan, I was slightly skeptical of Bakuchiol as plant-based alternative. But I’m now completely obsessed - I found it to be less irritating while still giving my skin visible results.\"</p>",
             "rating_star3": 5,
             "author3": "Claire Tindall",
             "author_place3": "",
@@ -452,15 +452,15 @@
           "type": "quote",
           "settings": {
             "featured_product": "c-juvenate",
-            "quote": "<p>\"This. Stuff. Works. I've tried the most popular Vitamin C serums on the market and this one takes the cake. It feels wonderful on my skin and putting it on every morning is a treat. I've seen reduced redness and the overall health of my skin has improved, after just a few weeks. Thanks, Hello!\"<\/p>",
+            "quote": "<p>\"This. Stuff. Works. I've tried the most popular Vitamin C serums on the market and this one takes the cake. It feels wonderful on my skin and putting it on every morning is a treat. I've seen reduced redness and the overall health of my skin has improved, after just a few weeks. Thanks, Hello!\"</p>",
             "rating_star": 5,
             "author": "Allie Muller",
             "author_place": "",
-            "quote2": "<p><em>Morning go-to!<\/em><\/p><p>\"I love the combo of vitamin c and ferulic acid in this serum. My skin is bright and glow-y thanks to these powerful ingredients. Added bonus: this serum layers easily (and absorbs quickly) making it my go-to before I apply sunscreen.\"<\/p>",
+            "quote2": "<p><em>Morning go-to!</em></p><p>\"I love the combo of vitamin c and ferulic acid in this serum. My skin is bright and glow-y thanks to these powerful ingredients. Added bonus: this serum layers easily (and absorbs quickly) making it my go-to before I apply sunscreen.\"</p>",
             "rating_star2": 5,
             "author2": "Claire Tindall",
             "author_place2": "",
-            "quote3": "<p><em>Skin is healthier!<\/em><\/p><p>\"I looove the smell of this Vitamin C serum. It feels really great on my skin and I've noticed fewer breakouts and less discoloration. I say 10\/10 and this is just within the first three months.\"<\/p>",
+            "quote3": "<p><em>Skin is healthier!</em></p><p>\"I looove the smell of this Vitamin C serum. It feels really great on my skin and I've noticed fewer breakouts and less discoloration. I say 10/10 and this is just within the first three months.\"</p>",
             "rating_star3": 5,
             "author3": "Jessica Wilson",
             "author_place3": "",
@@ -524,7 +524,7 @@
         "template--16989491429625__bd396c18-1ec6-48fc-934a-edf6b36fd1d3-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Call us crazy, but we believe beauty solutions should actually work. It’s why we’re so meticulous about every aspect of our formulations, from ensuring all our ingredients are of the highest efficacy, to working only with suppliers that meet our strict qualifications, to testing and manufacturing all our products right here in the United States.<\/p><p>Everything we do is about creating products that you love and trust to over-deliver results, every time. That’s a priority we take to heart and stand behind with our 60-day money-back guarantee. So you’re fully covered on any first-time purchase you make with us. Hello is simply beauty you can count on.<\/p>"
+            "text": "<p>Call us crazy, but we believe beauty solutions should actually work. It’s why we’re so meticulous about every aspect of our formulations, from ensuring all our ingredients are of the highest efficacy, to working only with suppliers that meet our strict qualifications, to testing and manufacturing all our products right here in the United States.</p><p>Everything we do is about creating products that you love and trust to over-deliver results, every time. That’s a priority we take to heart and stand behind with our 60-day money-back guarantee. So you’re fully covered on any first-time purchase you make with us. Hello is simply beauty you can count on.</p>"
           }
         },
         "template--16989491429625__bd396c18-1ec6-48fc-934a-edf6b36fd1d3-button-1": {
@@ -548,7 +548,7 @@
       ],
       "settings": {
         "desktop_content_position": "center",
-        "icon": "shopify:\/\/shop_images\/Group_2_6ba67f27-1476-4e17-aa6b-dd3e193191c7.png",
+        "icon": "shopify://shop_images/Group_2_6ba67f27-1476-4e17-aa6b-dd3e193191c7.png",
         "content_alignment": "left",
         "color_scheme": "scheme-f49e64fc-b6f6-4809-992d-7641ec9930ec",
         "full_width": false,

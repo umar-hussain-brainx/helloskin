@@ -475,7 +475,7 @@ display:none;
         {% if section.settings.enable_shippingEstimate %}
           <div class="shipping_estimator">
             <div class="shipping_estimator_img">
-              <img src="https://cdn.shopify.com/s/files/1/0242/8564/2804/files/shipping.png?v=1674471866" loading="lazy" width="40px" height:="20px"> 
+              <img src="https://cdn.shopify.com/s/files/1/0242/8564/2804/files/shipping.png?v=1674471866" loading="lazy" width="40" height="20"> 
             </div>
             <div class="shipping_estimator_info">
               <h1>{{ section.settings.shipping_heading }}</h1>
@@ -2083,7 +2083,7 @@ display:none;
   ],
   "settings": [
         {
-        "type": "text",
+        "type": "html",
         "id": "shipping_heading",
         "default": "Text block",
         "label": "Shipping Heading"

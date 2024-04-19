@@ -48,7 +48,7 @@
           "settings": {
             "heading": "Ingredients",
             "icon": "none",
-            "content": "<p>Water, Aloe Barbadensis (Aloe Vera) Leaf Juice, Myristoyl Pentapeptide-17, Myristoyl Hexapeptide-16, Glycerin, Biotin, Camellia Synesis (Green Tea) Leaf Extract, Malus Domestica Fruit Cell Culture Extract (Swiss Apple Stem Cell), Sodium Hyaluronate (Hyaluronic Acid), Sodium PCA, Phenoxyethanol, Sodium Lactate, Allantoin, D-Panthenol (Provitamin B5), Hydroxyethylcellulose, Polysorbate 20, Cloprostenol Isopropyl Ester, Trifolium Pratense (Red Clover) Extract</p>",
+            "content": "<p>Water, Aloe Barbadensis (Aloe Vera) Leaf Juice, Myristoyl Pentapeptide-17, Myristoyl Hexapeptide-16, Glycerin, Biotin, Camellia Synesis (Green Tea) Leaf Extract, Malus Domestica Fruit Cell Culture Extract (Swiss Apple Stem Cell), Sodium Hyaluronate (Hyaluronic Acid), Sodium PCA, Phenoxyethanol, Sodium Lactate, Allantoin, D-Panthenol (Provitamin B5), Hydroxyethylcellulose, Polysorbate 20, Dehydrolatanoprost, Trifolium Pratense (Red Clover) Extract</p>",
             "page": ""
           }
         },
@@ -93,7 +93,7 @@
         "cd5a0509-f27a-475d-8da3-7969b32a404e"
       ],
       "settings": {
-        "shipping_heading": "Free Standard Shipping US and Canada orders <br>                              Free Express Shipping Over $150",
+        "shipping_heading": "Free Standard Shipping US and Canada orders <br>\nFree Express Shipping Over $150",
         "guarantee": "60 DAY MONEY BACK GUARANTEE",
         "guarantee_bg": "#f3f3f3",
         "enable_sticky_info": true,
