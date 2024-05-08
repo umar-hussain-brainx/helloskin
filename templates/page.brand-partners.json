@@ -392,7 +392,7 @@
       "settings": {
         "title": "More products from us",
         "heading_size": "h1",
-        "description": "<p>Skin care is a personal journey and we’re here to guide you along the way.</p><p> Trusted to bring you FDA-approved, authentic products since 2012</p>",
+        "description": "<p>Skin care is a personal journey and we’re here to guide you along the way.</p><p> </p>",
         "show_description": false,
         "description_style": "body",
         "collection": "featured-collection",
