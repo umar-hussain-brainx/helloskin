@@ -30,36 +30,43 @@
 {% endif %}
 
   {%- style -%}
-  .custom_accordian
-  {
+.custom_accordian
+{
 display:none;
 
-  }
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-    }
+}
+.section-{{ section.id }}-padding {
+padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+}
 
-    @media screen and (min-width: 750px) {
-      .section-{{ section.id }}-padding {
-        padding-top: {{ section.settings.padding_top }}px;
-        padding-bottom: {{ section.settings.padding_bottom }}px;
-      }
-    }
-    .shipping_estimator_img img {
-      max-width: 40px;
-    }
-    .shipping_estimator{
-     display:flex;
-     align-items:center;
-     gap:15px;
-    }
-    .shipping_estimator *{
-      margin:0px;
-    }
-.product__accordion 
-{
-  max-height:none !important;
+@media screen and (min-width: 750px) {
+.section-{{ section.id }}-padding {
+padding-top: {{ section.settings.padding_top }}px;
+padding-bottom: {{ section.settings.padding_bottom }}px;
+}
+}
+.shipping_estimator_img img {
+max-width: 40px;
+}
+.shipping_estimator{
+display:flex;
+align-items:flex-start;
+gap:15px;
+background:#f6f6f6;
+padding:15px;
+border-radius:8px;
+}
+.shipping_estimator *{
+margin:0px;
+}
+
+.product__accordion {
+max-height:none !important;
+}
+.small_p{
+font-size:12px;
+color:grey;
 }
   {%- endstyle -%}
 
@@ -475,7 +482,7 @@ display:none;
         {% if section.settings.enable_shippingEstimate %}
           <div class="shipping_estimator">
             <div class="shipping_estimator_img">
-              <img src="https://cdn.shopify.com/s/files/1/0242/8564/2804/files/shipping.png?v=1674471866" loading="lazy"> 
+              <img src="https://cdn.shopify.com/s/files/1/0242/8564/2804/files/shipping.png?v=1674471866" loading="lazy" width="40" height="20"> 
             </div>
             <div class="shipping_estimator_info">
               <h1>{{ section.settings.shipping_heading }}</h1>
@@ -2083,10 +2090,16 @@ display:none;
   ],
   "settings": [
         {
-        "type": "text",
+        "type": "html",
         "id": "shipping_heading",
         "default": "Text block",
         "label": "Shipping Heading"
+      },
+      {
+        "type": "html",
+        "id": "inter_note",
+        "default": "*International orders may be subject to duty taxes upon delivery",
+        "label": "International Note"
       },
      {
         "type": "text",

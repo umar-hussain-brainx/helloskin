@@ -29,9 +29,11 @@
           "settings": {
             "button_label_1": "Shop Now",
             "button_link_1": "shopify:\/\/products\/lash-conditioner",
+            "button_link_1_new": false,
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
+            "button_link_2_new": false,
             "button_style_secondary_2": false
           }
         }
@@ -44,6 +46,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/5-CalliePhelps_HelloSkincare_r1_0026.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/5-CalliePhelps_HelloSkincare_r1_0026_1.png",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-left",
@@ -126,7 +129,7 @@
           "type": "button",
           "settings": {
             "button_label": "READ MORE",
-            "button_link": "",
+            "button_link": "https:\/\/helloskincare.com\/pages\/our-ethos-1",
             "button_style_secondary": false
           }
         }
@@ -269,7 +272,7 @@
         "template--16989491429625__59314ed1-7cb3-4fb8-a69d-5c21be0e5332-button-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/8_3x_c5160b76-ed45-40c2-a294-a00fb5734b2c.png",
+        "image": "shopify:\/\/shop_images\/2x_2e0dcd41-45d3-4fbe-8813-ac18b3b159c8.png",
         "bg_color": "",
         "radius": 50,
         "height": "adapt",

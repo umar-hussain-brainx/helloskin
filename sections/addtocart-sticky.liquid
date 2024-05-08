@@ -22,17 +22,16 @@
       <input type="hidden" name="id" value="{{ product.variants.first.id }}">
       <input type="radio" min="1" id="quantity" checked name="quantity" value="1"/>
       <span class="sticky-bar-price">
-        {{ product.price | money }}
-        {% comment %}
-        {% if duplicate_to_price != blank %} 
-          {{ duplicate_to_price | money  }} 
-        {% else %} 
-          {{ product.price | money }}  
-        {% endif %}
-        {% endcomment %}
+            {{ product.selected_or_first_available_variant.price | money }}
       </span>
-      <button class="button btn sticky-add-to-cart" type="button" onclick="$('.btn.product-form__cart-submit').click()">Add To Cart</button>
-    </form>
+    <button class="button btn sticky-add-to-cart " type="button" onclick="triggerAddToCart()">Add To Cart
+<div class="loading-overlay__spinner sticky_spinner hidden">
+  <svg aria-hidden="true" focusable="false" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+    <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+  </svg>
+</div>
+    </button>
+  </form>
   </div>
 </div>
 
@@ -64,6 +63,7 @@
     height:40px;
     margin:0 5px;
     vertical-align: middle;
+    gap:4px;
   }
   #addtocart-sticky input{
     display: none;
@@ -106,13 +106,15 @@
   width:50px;
   display:block;
 }
-
+.sticky_spinner{
+  height:20px;
+}
 @media only screen and (max-width:767px){
   #addtocart-sticky {
     padding-top: 9.5px;
     padding-bottom: 10px;
 }
-  .sticky_item_info {
+  .sticky_item_info .sticky_item_img,.sticky_item_info  .sticky_item_titles{
       display: none;
   }
   .addtocart_sticky_wrap form{
@@ -123,9 +125,6 @@
     padding-left: 15px;
     padding-right: 15px;
 }
-  .sticky-bar-price{
-    display:none !important;
-  }
   #addtocart-sticky button {
     height: 45px;
     width:100%;
@@ -139,6 +138,7 @@
 
 <script>
 
+  
 function isInViewport(element) {
   var elementTop = element.offsetTop;
   var elementBottom = elementTop + element.offsetHeight;
@@ -168,6 +168,29 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
+
+function triggerAddToCart() {
+ document.querySelector('.product-form__submit').click();
+document.querySelector('.sticky_spinner').classList.remove('hidden');
+}
+  
+function price_update_sticky() {
+    let parentElement = document.querySelector('body'); // Choose a suitable parent element
+    parentElement.addEventListener('click', function(event) {
+        let target = event.target;
+        if (target.closest('label')) { 
+            setTimeout(function() {
+                let regularPrice = document.querySelector('.price-item--regular').innerText;
+                let stickyBarPriceElement = document.querySelector('.sticky-bar-price');
+                stickyBarPriceElement.textContent = regularPrice;
+            }, 100);
+        }
+    });
+}
+
+price_update_sticky();
+      
 </script>
 {% schema %}
 {

@@ -517,6 +517,11 @@ a.product__text {
   .product--mobile-columns .product__media-item {
     width: calc(50% - 1.5rem - var(--grid-mobile-horizontal-spacing));
   }
+
+  .shipping_estimator * {
+    margin: 0px;
+    font-size: 15px;
+  }
 }
 
 @media screen and (min-width: 750px) {
@@ -653,6 +658,12 @@ a.product__text {
   .product__modal-opener:hover .product__media-icon,
   .product__modal-opener:focus .product__media-icon {
     opacity: 1;
+  }
+}
+
+@media(max-width:999px){
+  .shipping_estimator_img{
+    display: none;
   }
 }
 
