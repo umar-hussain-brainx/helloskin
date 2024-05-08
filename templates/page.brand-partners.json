@@ -13,6 +13,7 @@
       "blocks": {
         "ae951a68-7b67-49b4-9f6c-239ee8e91968": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "subheading": "HELLO SKINCARE BRAND PARTNER PROGRAM",
             "heading_size": "h1"
@@ -21,7 +22,7 @@
         "template--16992052084985__180bc402-6769-41da-ba4c-c0f181db3bf7-text-1": {
           "type": "text",
           "settings": {
-            "text": "Join our <strong>Brand Partner Program<\/strong> today and start racking up redemptions to earn valuable rewards, starting with a FREE tube of Lash Therapy!",
+            "text": "Join the 2024 revamped Hello <strong>Skincare Brand Partner Program<\/strong>, where everyone earns 10% cash commission for every single code redemption. Snag 20 code redemptions to really start racking up rewards!",
             "text_style": "subtitle"
           }
         },
@@ -45,14 +46,14 @@
         "template--16992052084985__180bc402-6769-41da-ba4c-c0f181db3bf7-buttons-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Hello_Skincare_Updated_Image.png",
-        "mobile_image": "shopify:\/\/shop_images\/Hello_Skincare_Updated_Image.png",
+        "image": "shopify:\/\/shop_images\/TDAVIS_Hello_Skincare016_copy_1.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/TDAVIS_Hello_Skincare016_copy_1.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "adapt",
         "desktop_content_position": "middle-left",
         "show_text_box": false,
         "desktop_content_alignment": "left",
-        "color_scheme": "background-1",
+        "color_scheme": "inverse",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -65,13 +66,16 @@
         "template--16992052084985__43e8f229-2cca-465f-8820-c4be3ba766fa-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "More discount code redemptions",
-            "heading_size": "h1"
+            "heading": "More code redemptions",
+            "heading_size": "h2"
           }
         }
       },
       "block_order": [
         "template--16992052084985__43e8f229-2cca-465f-8820-c4be3ba766fa-heading-1"
+      ],
+      "custom_css": [
+        ".rich-text.content-container {margin: 2em auto;}"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -94,6 +98,15 @@
             "link": ""
           }
         },
+        "53cc565e-3ad4-4d0e-99e6-a0fe4c5d2072": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "template--16992052084985__ff8e5e85-b3df-4a1e-8386-ba7fd358b57e-column-1": {
           "type": "column",
           "settings": {
@@ -104,7 +117,16 @@
             "link": ""
           }
         },
-        "53cc565e-3ad4-4d0e-99e6-a0fe4c5d2072": {
+        "column_dYpR8n": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_RCwbrD": {
           "type": "column",
           "settings": {
             "title": "",
@@ -116,15 +138,20 @@
       },
       "block_order": [
         "b1768288-d7f9-46e5-b32e-f6f7ffe1e261",
+        "53cc565e-3ad4-4d0e-99e6-a0fe4c5d2072",
         "template--16992052084985__ff8e5e85-b3df-4a1e-8386-ba7fd358b57e-column-1",
-        "53cc565e-3ad4-4d0e-99e6-a0fe4c5d2072"
+        "column_dYpR8n",
+        "column_RCwbrD"
+      ],
+      "custom_css": [
+
       ],
       "settings": {
         "title": "",
         "heading_size": "h2",
         "image_width": "third",
         "image_ratio": "circle",
-        "columns_desktop": 3,
+        "columns_desktop": 5,
         "column_alignment": "center",
         "background_style": "none",
         "button_label": "",
@@ -142,13 +169,16 @@
         "template--16992052084985__6113165a-e156-4b03-9058-a7f59e4e2924-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "More free products, cash bonuses, and higher partner status for special VIP perks only Premier Partners have access to!",
-            "heading_size": "h1"
+            "heading": "More commissions, cash bonuses, and special VIP perks!",
+            "heading_size": "h2"
           }
         }
       },
       "block_order": [
         "template--16992052084985__6113165a-e156-4b03-9058-a7f59e4e2924-heading-1"
+      ],
+      "custom_css": [
+        ".rich-text.content-container {margin: 2em auto;}"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -161,18 +191,24 @@
     },
     "7e901446-0861-43ea-9e4f-bfddbaa1640c": {
       "type": "brand-partners-tiers",
+      "custom_css": [
+        "@media (min-width: 769px) {.bp-index-3 .Heading h2 {margin-bottom: -100px; }}",
+        "@media (max-width: 768px) {.bp-se3bottom .bp-bottom-1, .bp-se3bottom .bp-bottom-2, .bp-se3bottom .bp-bottom-3 {margin-top: 70px !important; }}",
+        ".bp-se3bottom span {font-size: 14px; color: #121212bf;}",
+        "li {color: #121212bf;}"
+      ],
       "settings": {
-        "heading": "Our Brand Partner Program has <span>3 tiers.<\/span>",
+        "heading": "<span>Brand Partner Tiers And Benefits<\/span>",
         "chart_image": "shopify:\/\/shop_images\/Group_4.png",
-        "bottom_heading_1": "NEW BRAND PARTNER",
-        "desc_1": "Every new affiliate starts here, but it’s easy to move up fast! You’ll receive a 10% custom\ndiscount code to share with your friends, followers and family. Once your code has 10\nredemptions, you’ll earn a six-month supply of Lash Therapy and be promoted to a Level Two\nBrand Partner. Wooo!",
-        "specs1": "<ul>\n<li>10% discount code to share<\/li>\n<li>Earn a free six-month product supply after 10 code redemptions<\/li>\n<\/ul>",
-        "bottom_heading_2": "LEVEL TWO BRAND PARTNER",
-        "desc_2": "You’re on the fast-track to success! At this level, you’ll already have at least 10 code\nredemptions under your belt along with a brand new 20% custom discount code to share. Once\nyour 20% discount code has 10 redemptions, you’ll earn another free six-month supply of Lash\nTherapy and be promoted to Premier Partner. Yesss, please!",
-        "specs2": "<ul>\n<li>20% discount code to share<\/li>\n<li>Earn a free six-month product supply after 10 code redemptions<\/li>\n<\/ul>",
-        "bottom_heading_3": "PREMIER PARTNER",
-        "desc_3": "At this level, the rewards and perks just keep coming! Premier Partners keep their 20% discount\nand earn 10% cash back on every single code redemption. Plus, you’ll get a personalized VIP\ncode that gives you early access to every Hello Skincare sale and exclusive access to our special\nflash sales. You’ll also get free product refills and giveaways. Plus, the Premier Partner with the\nmost redemptions every month gets an additional $100 cash bonus! Cha-ching!",
-        "specs3": "<ul>\n<li>20% discount code to share<\/li>\n<li>10% cash back on redemptions<\/li>\n<li>More free products<\/li>\n<\/ul>"
+        "bottom_heading_1": "INFLUENCER  <br><span>0-19 CODE <br>REDEMPTIONS<\/span>",
+        "desc_1": "<ul>\n<li>Personalized 20% Discount to Share\n<\/li>\n<li>\n10% Cash Commission Paid Monthly\n<\/li>\n<li>\nOne 30% Flash Sale per Year\n<\/li>\n<li>\nFree Triple Threat on 20th Redemption\n<\/li>\n<li>\n$100 Top Performer Bonus Every Month\n<\/li>\n<\/ul>",
+        "specs1": "",
+        "bottom_heading_2": "PREMIER PARTNER<br> <span> 20+ CODE <br>REDEMPTIONS<\/span>",
+        "desc_2": "<ul>\n<li>\nPersonalized 20% Discount to Share\n<\/li>\n<li>\n10% Cash Commission\nPaid Monthly\n<\/li>\n<li>\n48 Hour VIP Access to All\nMajor Hello Sale Events with Personalized Code\n<\/li>\n<li>\nFree Product Refills Every\nThree Months\n<\/li>\n<li>\nTwo 30% Flash Sales per Year\n<\/li>\n<li>\n$250 Top Performer bonus Every Month\n<\/li>\n<\/ul>",
+        "specs2": "",
+        "bottom_heading_3": "LEGACY PARTNER <br><span>  TOP 20 HELLO PARTNERS<br> FROM THE PREVIOUS YEAR<\/span>",
+        "desc_3": "<ul>\n<li>Personalized 20% Discount to Share\n<\/li>\n<li>\n10% Cash Commission\n<\/li>\n<li>\nPaid Monthly\n<\/li>\n<li>\n48 Hour VIP Access to All Major Hello Sale Events with Personalized Code\n<\/li>\n<li>\nFree Product Refills\n<\/li>\n<li>\nTwo 30% Flash Sales or Double Commission Flash Sales per Year\n<\/li>\n<li>\nWhitelisting Opportunities with your Personal Code\/Link Shared in Ads\n<\/li>\n<li>\n$1000 Top Performer Bonus Paid Every Month\n<\/li>\n<\/ul>",
+        "specs3": ""
       }
     },
     "9c11d2a9-a085-4133-ae53-f585b9b6ea1e": {
@@ -207,7 +243,7 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "left",
-        "color_scheme": "",
+        "color_scheme": "background-1",
         "full_width": false,
         "padding_top": 40,
         "padding_bottom": 52
@@ -225,8 +261,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Group_57.webp",
-            "title": "Before and After",
-            "text": "",
+            "title": "<strong>Before and After<\/strong>",
+            "text": "<p>Remember to take lash photos to track your lash growth progress! Put them next to each other to really showcase the difference Lash Therapy has made for you.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -259,8 +295,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Group_-1.webp",
-            "title": "",
-            "text": "<p><strong>A Glamour Shot <\/strong>can really showcase your lashes <\/p><p>when paired with a testimony and your discount code<\/p>",
+            "title": "<strong>A Glamour Shot<\/strong>",
+            "text": "<p>Can really showcase your lashes when paired with a testimony and your discount code.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -382,9 +418,61 @@
         "749c3997-aea8-41f5-b4ec-cd9f15851baa",
         "7b32e6fa-27e5-4ee7-8198-b0b86aa99754"
       ],
+      "disabled": true,
       "settings": {
         "sub_heading": "KNOW YOUR PRODUCTS",
         "heading": "General Questions & Answers"
+      }
+    },
+    "faq_section_dynamic_whftF3": {
+      "type": "Faq-section-dynamic",
+      "blocks": {
+        "faq_zDq3h3": {
+          "type": "faq",
+          "settings": {
+            "heading-1": "Customers say that my discount code isn’t working.",
+            "desc-1": "<p>Most of the time, issues with discount codes mean the customer is trying to use your discount code on a subscription order. Make sure the customer is making a “one time purchase” versus a “subscribe and save” order. Subscription orders include a 15% discount, and Brand Partner discount codes can’t be combined with other discounts. <\/p><p><\/p>"
+          }
+        },
+        "faq_eJG8kw": {
+          "type": "faq",
+          "settings": {
+            "heading-1": "Can I get a custom code to participate in a Hello Skincare sale?",
+            "desc-1": "<p>Custom codes to participate in Hello Skincare sales are a perk reserved for our Premier Partners. Once your code has 20 redemptions, you are eligible to participate in our sales. And that’s not all! Premier Partners actually get exclusive access to share our sales before we announce those sales to the general public. <\/p><p><\/p>"
+          }
+        },
+        "faq_NYeJfY": {
+          "type": "faq",
+          "settings": {
+            "heading-1": "Once I reach Premier Partner status, do I keep that status for forever and always?",
+            "desc-1": "<p>When you reach Premier Partner status, it is guaranteed for the rest of that calendar year, as well as the next calendar year. In order to maintain your Premier Partner status, you do need to acquire 20 coupon code redemptions each subsequent year. For example, if you made Premier Partner in 2023, you have it for the rest of 2023 and 2024…but you need to acquire 20 code redemptions in 2024 in order to maintain your status for 2025. This helps to ensure that the Premier Partner status remains exclusive. <\/p><p><\/p>"
+          }
+        },
+        "faq_NRzM7P": {
+          "type": "faq",
+          "settings": {
+            "heading-1": "I was a New Brand Partner with some code redemptions. Did I lose those?",
+            "desc-1": "<p>Nope! All your code redemptions stay on your profile. If you are a New Brand Partner and have not yet been upgraded to our Influencer Tier, please contact us ASAP and we will get you enrolled so you can start earning commission for your code redemptions. The New Brand Partner tier will be deleted on December 31, 2024. <\/p><p><\/p>"
+          }
+        },
+        "faq_Ja9Ejz": {
+          "type": "faq",
+          "settings": {
+            "heading-1": "I am interested in trying Lash Therapy in exchange for UGC.",
+            "desc-1": "<p><strong> <\/strong>We partner with some influencers to receive complimentary product, on a case by case basis. We are looking for partners excited about earning commission through our affiliate program and are not currently in need of additional UGC. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_zDq3h3",
+        "faq_eJG8kw",
+        "faq_NYeJfY",
+        "faq_NRzM7P",
+        "faq_Ja9Ejz"
+      ],
+      "settings": {
+        "sub_heading": "KNOW YOUR PRODUCTS",
+        "heading": "Brand Partner FAQs"
       }
     },
     "5176e1fb-2459-46c7-8bff-059527b2a7b5": {
@@ -429,6 +517,7 @@
     "a87e0602-2fea-4c7a-b199-38e5e61036a0",
     "b0360642-f73a-46d8-a7c1-000898d8a86e",
     "e9cd2816-c79c-46f0-a774-2148ce4253f0",
+    "faq_section_dynamic_whftF3",
     "5176e1fb-2459-46c7-8bff-059527b2a7b5"
   ]
 }

@@ -1,4 +1,5 @@
 <style>
+
 .bp-index-3 {
     background: #fef6ee;
     margin-top: 55px;
@@ -30,8 +31,11 @@
     padding-top: 80px;
 }
 .bp-se3bottom .bp-bottom-1, .bp-se3bottom .bp-bottom-2, .bp-se3bottom .bp-bottom-3 {
-  width: 32%;
+  width: 20%;
   position: relative;
+}
+.bottom-heading-3{
+  text-align:right;
 }
   .bp-se3bottom .bp-bottom-1:before {
     content: "1";
@@ -50,14 +54,14 @@
     font-weight: 900;
     z-index: 2;
 }
-  .bp-se3bottom .bp-bottom-2:before {
+.bp-se3bottom .bp-bottom-2:before {
     content: "2";
     background: #ff5442;
     height: 40px;
     width: 40px;
     position: absolute;
     top: -40px;
-    left: 20px;
+    left: 50%;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -66,6 +70,8 @@
     font-size: 20px;
     font-weight: 900;
     z-index: 2;
+    margin: 0;
+    transform: translate(-50%, 10px);
 }
 .bp-se3bottom .bp-bottom-3:before {
     content: "3";
@@ -74,7 +80,7 @@
     width: 40px;
     position: absolute;
     top: -40px;
-    left: 20px;
+    right: -20px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -91,20 +97,21 @@
     height: 83px;
     width: 2px;
     position: absolute;
-    top: -38%;
+    top: -27%;
     left: 39px;
     z-index: 1;
 }
-  .bp-se3bottom .bp-bottom-2:after {
+.bp-se3bottom .bp-bottom-2:after {
     content: "";
     background-color: #ff5442;
-    background-image: linear-gradient(rgb(254 246 238),rgb(255 84 66));
+    background-image: linear-gradient(rgb(254 246 238), rgb(255 84 66));
     height: 130px;
     width: 2px;
     position: absolute;
-    top: -53%;
-    left: 39px;
+    top: -29%;
+    left: 50%;
     z-index: 1;
+    transform: translate(-50%, 10px);
 }
 .bp-se3bottom .bp-bottom-3:after {
     content: "";
@@ -113,8 +120,8 @@
     height: 240px;
     width: 2px;
     position: absolute;
-    top: -89%;
-    left: 39px;
+    top: -47%;
+    right: 0px;
     z-index: 1;
 }
   .bp-se3bottom h2 {
@@ -126,6 +133,9 @@
     color: #4e5651;
     margin-top: 20px;
 }
+  .bottom-heading-2{
+    text-align:center;
+  }
   .bottom-heading-1 p, .bottom-heading-2 p, .bottom-heading-3 p {
     color: #2f3932;
     opacity: .6;
@@ -177,11 +187,20 @@
     height: 83px;
     width: 2px;
     position: absolute;
-    top: -38%;
+    top: -20%;
     left: 39px;
     z-index: 1;
 }
+.multicolumn-card__info .inline-richtext{
+  font-size:32px;
+}
   @media(max-width:768px){
+.bottom-heading-3{
+  text-align:left;
+}
+    .multicolumn-card__info .inline-richtext{
+      font-size:20px;
+    }
     .bp-index-3 .Heading{
     width:100%;
     }
@@ -245,7 +264,7 @@
 <div class="bottom-heading-1">
  <h2>{{ section.settings.bottom_heading_1 }}</h2>
 </div>
-<div class="bottom-heading-1">
+<div class="bottom-heading-des-1">
  <p>{{ section.settings.desc_1 }}</p>
 </div>
   
@@ -259,7 +278,7 @@
 <div class="bottom-heading-2">
  <h2>{{ section.settings.bottom_heading_2 }}</h2>
 </div>
-<div class="bottom-heading-2">
+<div class="bottom-heading-des-2">
  <p>{{ section.settings.desc_2 }}</p>
 </div>
   
@@ -273,7 +292,7 @@
 <div class="bottom-heading-3">
  <h2>{{ section.settings.bottom_heading_3 }}</h2>
 </div>
-<div class="bottom-heading-3">
+<div class="bottom-heading-des-3">
  <p>{{ section.settings.desc_3 }}</p>
 </div>
   
@@ -312,7 +331,7 @@
     },
     {
       "id": "bottom_heading_1",
-      "type": "text",
+      "type": "html",
       "label": "Heading One"
     },
     {
@@ -331,7 +350,7 @@
     },
     {
       "id": "bottom_heading_2",
-      "type": "text",
+      "type": "html",
       "label": "Heading Two"
     },
     {
@@ -350,7 +369,7 @@
     },
     {
       "id": "bottom_heading_3",
-      "type": "text",
+      "type": "html",
       "label": "Heading Three"
     },
     {
